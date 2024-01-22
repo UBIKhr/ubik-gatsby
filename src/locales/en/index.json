@@ -1,0 +1,25 @@
+{
+    "home": {
+      "title": "UBIK - Croatian Association for Blockchain and Cryptocurrencies",
+      "content": "Education, information, research, and raising awareness about blockchain technologies.",
+      "buttonText": "JOIN US",
+      "cards": [
+        {
+          "title": "Community",
+          "text": "Create a focused and strong community of individuals involved in the blockchain and crypto domain in Croatia and the surrounding area."
+        },
+        {
+          "title": "Information",
+          "text": "Provide relevant information, education, and knowledge within blockchain technology, cryptocurrency mechanics, and the overall market."
+        },
+        {
+          "title": "Support",
+          "text": "Enable legal, financial, and technological support in developing regulatory frameworks and strategic blockchain projects."
+        }
+      ],
+      "aboutTitle": "About the Association",
+      "aboutContent1": "The Association for Blockchain and Cryptocurrencies (UBIK) was founded on December 13, 2017, by adopting the Statute at the founding Assembly.",
+      "aboutContent2": "The Association was registered in the Register of Associations on January 18, 2018. According to its goals, it operates in the field of education, science, and research. The work of the Association is public, and all members of the Association have the right to participate in the work of the Association."
+    }
+  }
+  

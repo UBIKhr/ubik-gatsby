@@ -1,128 +1,126 @@
 import * as React from "react"
-import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
-
+import Button from "../components/button.js"
+import { graphql, useStaticQuery } from 'gatsby';
+import { Link, useTranslation, Trans } from 'gatsby-plugin-react-i18next';
+import Card from "../components/card.js";
 import Layout from "../components/layout"
-import Seo from "../components/seo"
-import * as styles from "../components/index.module.css"
+import Seo from "../components/seo";
+import Hero from "../components/hero.js";
+import { StaticImage } from "gatsby-plugin-image";
 
-const links = [
-  {
-    text: "Tutorial",
-    url: "https://www.gatsbyjs.com/docs/tutorial",
-    description:
-      "A great place to get started if you're new to web development. Designed to guide you through setting up your first Gatsby site.",
-  },
-  {
-    text: "Examples",
-    url: "https://github.com/gatsbyjs/gatsby/tree/master/examples",
-    description:
-      "A collection of websites ranging from very basic to complex/complete that illustrate how to accomplish specific tasks within your Gatsby sites.",
-  },
-  {
-    text: "Plugin Library",
-    url: "https://www.gatsbyjs.com/plugins",
-    description:
-      "Learn how to add functionality and customize your Gatsby site or app with thousands of plugins built by our amazing developer community.",
-  },
-  {
-    text: "Build and Host",
-    url: "https://www.gatsbyjs.com/cloud",
-    description:
-      "Now you’re ready to show the world! Give your Gatsby site superpowers: Build and host on Gatsby Cloud. Get started for free!",
-  },
-]
 
-const samplePageLinks = [
-  {
-    text: "Page 2",
-    url: "page-2",
-    badge: false,
-    description:
-      "A simple example of linking to another page within a Gatsby site",
-  },
-  { text: "TypeScript", url: "using-typescript" },
-  { text: "Server Side Rendering", url: "using-ssr" },
-  { text: "Deferred Static Generation", url: "using-dsg" },
-]
 
-const moreLinks = [
-  { text: "Join us on Discord", url: "https://gatsby.dev/discord" },
-  {
-    text: "Documentation",
-    url: "https://gatsbyjs.com/docs/",
-  },
-  {
-    text: "Starters",
-    url: "https://gatsbyjs.com/starters/",
-  },
-  {
-    text: "Showcase",
-    url: "https://gatsbyjs.com/showcase/",
-  },
-  {
-    text: "Contributing",
-    url: "https://www.gatsbyjs.com/contributing/",
-  },
-  { text: "Issues", url: "https://github.com/gatsbyjs/gatsby/issues" },
-]
+const IndexPage = ({}) => {
+  const { t } = useTranslation();
+  const data = useStaticQuery(graphql`
+    query 
+    {
+      backgroundImage: file(relativePath: { eq: "herohome.png" }) {
+        childImageSharp {
+          gatsbyImageData
+        }
+      }
+      image1: file(relativePath: { eq: "community.png" }) {
+        childImageSharp {
+          gatsbyImageData
+        }
+      }
+      image2: file(relativePath: { eq: "information.png" }) {
+        childImageSharp {
+          gatsbyImageData
+        }
+      }
+      image3: file(relativePath: { eq: "support.png" }) {
+        childImageSharp {
+          gatsbyImageData
+        }
+      }
+    }
+  `);
 
-const utmParameters = `?utm_source=starter&utm_medium=start-page&utm_campaign=default-starter`
+  const cardsData = [
+    {
+      image: data.image1,
+      titlefront: 'Zajednica',
+      textfront: 'Stvoriti fokusiranu i snažnu zajednicu ljudi uključenih u blockchain i kripto domenu u Hrvatskoj i okruženju.',
+    },
+    {
+      image: data.image2,
+      titlefront: 'Informacije',
+      textfront: 'Pružiti relevantne informacije, edukaciju i znanje unutar blockchain tehnologije, mehanike kriptovaluta i cjelokupnog tržišta.',
+    },
+    {
+      image: data.image3,
+      titlefront: 'Podrska',
+      textfront: 'Omogućiti pravnu, financijsku i tehnološku podršku u razvijanju regulatornih okvira i strateških blockchain projekata.',
+    },
+  ];
 
-const IndexPage = () => (
+  return (
   <Layout>
-    <div className={styles.textCenter}>
-      <StaticImage
-        src="../images/example.png"
-        loading="eager"
-        width={64}
-        quality={95}
-        formats={["auto", "webp", "avif"]}
-        alt=""
-        style={{ marginBottom: `var(--space-3)` }}
-      />
-      <h1>
-        Welcome to <b>Gatsby!</b>
-      </h1>
-      <p className={styles.intro}>
-        <b>Example pages:</b>{" "}
-        {samplePageLinks.map((link, i) => (
-          <React.Fragment key={link.url}>
-            <Link to={link.url}>{link.text}</Link>
-            {i !== samplePageLinks.length - 1 && <> · </>}
-          </React.Fragment>
-        ))}
-        <br />
-        Edit <code>src/pages/index.js</code> to update this page.
-      </p>
+    <main className="text-white">
+    <Hero imagePosition="right" backgroundImage={data.backgroundImage}>
+      <h1 className="text-center text-md2 pt-24 lg:text-lg lg:text-left font-regular font-extralight mb-4">Udruga za blockchain i kriptovalute</h1>
+      <p className="text-base2 text-center lg:text-left font-hind font-normal lg:w-full pt-4 pb-12 lg:py-12">Obrazovanje, znanost, istraživanje te širenje svijesti o blockchain tehnologiji. </p>
+      <Link to={'/join'}><Button className="w-full md:w-2/3 lg:w-1/2 2xl:w-1/3 mb-12">Postani ČLAN</Button></Link>
+    </Hero>
+      <section className="pt-20 xl:pt-40">
+        <div className="flex flex-col md:flex-row justify-center items-center">
+          {cardsData.map((card, index) => (
+           <Card imageWidthClass="1/2" key={index} {...card} />
+          ))}
+        </div>     
+      </section>
+      <section className="pt-20 lg:pt-72 w-screen flex flex-col lg:flex-row items-center">
+        <div className="w-full px-4 lg:px-32">
+          <h1 className="text-center text-lg lg:text-left font-regular font-extralight pb-12">O udruzi</h1>
+          <p className="text-center text-base1 lg:text-left font-hind font-normal pb-8 2xl:w-1/2">Udruga za blockchain i kriptovalute (UBIK) osnovana je 13.12.2017. usvajanjem Statuta</p>
+          <p className="text-center text-xs lg:text-left font-regular pb-12 2xl:w-2/3">Udruge na sjednici osnivačke Skupštine. Udruga je upisana u Registar udruga 18.01.2018. te sukladno ciljevima djeluje na području obrazovanja, znanosti i istraživanja. Rad Udruge je javan i svi članovi Udruge imaju pravo sudjelovati u radu Udruge sukladno odredbama Statuta i Zakona te pravo uvida u rad tijela i odluke koje njena tijela donose. Rad Udruge usmjeren je ka ispunjavanju ciljeva Udruge. Plan rada, stoga, logično proizlazi iz ciljeva.</p>
+          <Link to={'/join'}><Button className="w-full md:w-2/3 lg:w-1/2 2xl:w-1/3 mb-12">Postani ČLAN</Button></Link>
+        </div>
+        <div className="w-full">
+          <StaticImage
+            src="../images/abouthome.png"
+            alt="About"
+          />
+        </div>
+      </section>
+      <section className="pt-20 lg:pt-72 w-screen">
+      <div className="bg-blue w-screen lg:w-2/3 text-white lg:px-32">
+      <h2 className="text-md lg:text-md2 xl:text-lg font-extralight mb-4 text-center lg:text-left pt-12 pb-8">Prijavi se na Newsletter</h2>
+      <form className="px-4 flex flex-col lg:flex-row">
+        <input
+          type="email"
+          placeholder="Upisi svoju email adresu..."
+          className="relative overflow-hidden
+          py-4 px-6 font-tiny lg:font-base1 text-white bg-blue-dark opacity-60 
+          rounded-full mb-8 w-full lg:w-1/2 2xl:w-1/3 h-full"
+        />
+        <button
+          type="submit"
+          className={`
+            relative overflow-hidden h-full
+            py-3 px-16 font-regular uppercase font-base1 font-medium text-white bg-transparent 
+            border border-pink1 rounded-full w-full lg:w-1/2 2xl:w-1/3 lg:ml-2 2xl:ml-24 mb-12
+            transition-colors duration-300 ease-in-out hover:bg-pink1 hover:text-background
+          `}
+        >
+          Pridruzi se
+        </button>
+      </form>
     </div>
-    <ul className={styles.list}>
-      {links.map(link => (
-        <li key={link.url} className={styles.listItem}>
-          <a
-            className={styles.listItemLink}
-            href={`${link.url}${utmParameters}`}
-          >
-            {link.text} ↗
-          </a>
-          <p className={styles.listItemDescription}>{link.description}</p>
-        </li>
-      ))}
-    </ul>
-    {moreLinks.map((link, i) => (
-      <React.Fragment key={link.url}>
-        <a href={`${link.url}${utmParameters}`}>{link.text}</a>
-        {i !== moreLinks.length - 1 && <> · </>}
-      </React.Fragment>
-    ))}
+      </section>
+    </main>
   </Layout>
-)
+  
+  );
+  
+};
 
-/**
- * Head export to define metadata for the page
- *
- * See: https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-head/
- */
+
 export const Head = () => <Seo title="Home" />
 
-export default IndexPage
+export default IndexPage;
+
+
+

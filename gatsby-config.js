@@ -9,7 +9,7 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
+    title: `UBIK`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
     author: `@gatsbyjs`,
     siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
@@ -25,6 +25,25 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-plugin-sitemap`,
+    'gatsby-plugin-postcss',
+    {
+      resolve: `gatsby-source-wordpress`,
+      options: {
+        url: process.env.WPGRAPHQL_URL || `http://ubik.local/graphql`, // Update the URL here
+        schema: {
+          typePrefix: `Wp`,
+        },
+        develop: {
+          hardCacheMediaFiles: true,
+        },
+        type: {
+          Post: {
+            limit: process.env.NODE_ENV === `development` ? 50 : 5000,
+          },
+        },
+      },
+    },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -39,5 +58,29 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/locales`,
+        name: `locale`
+      }
+    },
+    {
+      resolve: 'gatsby-plugin-react-i18next',
+      options: {
+        localeJsonSourceName: `locale`,
+        languages: [`hr`, `en`],
+        defaultLanguage: `hr`,
+        siteUrl: `http://localhost:8000/`,
+        i18nextOptions: {
+          fallbackLng: `hr`,
+          supportedLngs: [`hr`, `en`],
+          defaultNS: 'common',
+          interpolation: {
+            escapeValue: false, 
+          }
+        },
+      },
+    }, 
   ],
 }
