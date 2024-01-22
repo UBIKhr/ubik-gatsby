@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import {Link, useI18next} from 'gatsby-plugin-react-i18next';
+import { Link, useI18next } from 'gatsby-plugin-react-i18next';
 import { Trans, useTranslation } from 'gatsby-plugin-react-i18next';
 import logo from '../images/logo.png';
-
 
 const links = [
   {
@@ -28,11 +27,11 @@ const links = [
 ];
 
 const Header = () => {
-  const {languages, originalPath, i18n} = useI18next();
+  const { originalPath } = useI18next();
   const { t } = useTranslation();
   const [isExpanded, toggleExpansion] = useState(false);
   const [isScrolled, setScrolled] = useState(false);
-
+  const [currentPath, setCurrentPath] = useState(originalPath);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -53,6 +52,10 @@ const Header = () => {
     }
   }, [isExpanded]);
 
+  useEffect(() => {
+    setCurrentPath(originalPath);
+  }, [originalPath]);
+
   const handleLinkClick = () => {
     if (isExpanded) {
       toggleExpansion(false);
@@ -66,7 +69,6 @@ const Header = () => {
     toggleExpansion(!isExpanded);
   };
 
-  
   return (
     <header className={`flex fixed z-10 top-0 w-full items-start lg:items-center justify-between px-5 py-8 lg:px-24 xl:px-32 lg:py-10 font-regular text-white text-xs ${isScrolled ? 'bg-gradient-start' : 'bg-transparent'}`}>
       <Link to="/" onClick={handleLinkClick}>
@@ -78,13 +80,13 @@ const Header = () => {
           {links.map((link) => (
             <li
               key={link.url}
-              className={`text-white uppercase pt-5 active:text-orange2 relative before:content-[''] before:absolute before:block before:w-full before:h-[2px] 
+              className={`text-white uppercase pt-5 ${currentPath === link.url ? 'active:text-orange2' : ''} relative before:content-[''] before:absolute before:block before:w-full before:h-[2px] 
               before:bottom-0 before:left-0 before:bg-orange2
               before:hover:scale-x-100 before:scale-x-0 before:origin-top-left
               before:transition before:ease-in-out before:duration-300`}
             >
               <Link to={link.url} onClick={handleLinkClick}>
-              <Trans>{link.text} </Trans> 
+                <Trans>{link.text} </Trans>
               </Link>
             </li>
           ))}
@@ -100,9 +102,7 @@ const Header = () => {
           {links.map((link) => (
             <li
               key={link.url}
-              className={`text-white block uppercase pt-5 ${
-                window.location.pathname === link.url ? 'active:text-orange2' : ''
-              } relative before:content-[''] before:absolute before:block before:w-full before:h-[2px] 
+              className={`text-white block uppercase pt-5 ${currentPath === link.url ? 'active:text-orange2' : ''} relative before:content-[''] before:absolute before:block before:w-full before:h-[2px] 
               before:bottom-0 before:left-0 before:bg-orange2
               before:hover:scale-x-100 before:scale-x-0 before:origin-top-left
               before:transition before:ease-in-out before:duration-300`} 
@@ -117,34 +117,33 @@ const Header = () => {
               before:hover:scale-x-100 before:scale-x-0 before:origin-top-left
               before:transition before:ease-in-out before:duration-300`}>Postani član</Link>
         </ul>
-        
+
       </div>
 
       <div className="relative lg:hidden">
-          <button
-            className="text-white focus:outline-none"
-            onClick={handleButtonClick}
+        <button
+          className="text-white focus:outline-none"
+          onClick={handleButtonClick}
+        >
+          <svg
+            className="w-6 h-6"
+            fill="none"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth="2"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
           >
-            <svg
-              className="w-6 h-6"
-              fill="none"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              {isExpanded ? (
-                <path d="M6 18L18 6M6 6l12 12"></path>
-              ) : (
-                <path d="M4 6h16M4 12h16m-7 6h7"></path>
-              )}
-            </svg>
-          </button>
-        </div>
+            {isExpanded ? (
+              <path d="M6 18L18 6M6 6l12 12"></path>
+            ) : (
+              <path d="M4 6h16M4 12h16m-7 6h7"></path>
+            )}
+          </svg>
+        </button>
+      </div>
     </header>
   );
 };
 
 export default Header;
-
