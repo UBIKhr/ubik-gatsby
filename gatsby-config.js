@@ -27,23 +27,23 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-plugin-sitemap`,
     'gatsby-plugin-postcss',
-    {
-      resolve: `gatsby-source-wordpress`,
-      options: {
-        url: process.env.WPGRAPHQL_URL || `http://ubik.local/graphql`, // Update the URL here
-        schema: {
-          typePrefix: `Wp`,
-        },
-        develop: {
-          hardCacheMediaFiles: true,
-        },
-        type: {
-          Post: {
-            limit: process.env.NODE_ENV === `development` ? 50 : 5000,
-          },
-        },
-      },
-    },
+   // {
+   //   resolve: `gatsby-source-wordpress`,
+   //   options: {
+   //     url: process.env.WPGRAPHQL_URL || `http://ubik.local/graphql`, // Update the URL here
+   //     schema: {
+  //      typePrefix: `Wp`,
+   //     },
+   //     develop: {
+   //       hardCacheMediaFiles: true,
+   //     },
+   //     type: {
+   //       Post: {
+   //         limit: process.env.NODE_ENV === `development` ? 50 : 5000,
+   //       },
+   //     },
+   //   },
+  //  },
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
