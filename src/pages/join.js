@@ -73,8 +73,8 @@ const JoinUsPage = () => {
         }
     ];
     return (
-        <main className="text-white">
-            <Layout>
+        <main className="text-white overflow-hidden">
+        <Layout>
             <section className="pt-20 lg:pt-60 2xl:pt-72 w-screen relative bg-gradient-to-b from-gradient-start to-gradient-end">
                 <div className="px-4 lg:px-32 font-regular pt-12 lg:pt-0 2xl:pt-6">
                     <h1 className="text-left text-md2 lg:text-xl lg:text-left font-regular font-extralight mb-4">Postani član</h1>

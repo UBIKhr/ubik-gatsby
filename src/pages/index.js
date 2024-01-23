@@ -58,7 +58,7 @@ const IndexPage = ({}) => {
 
   return (
   <Layout>
-    <main className="text-white">
+    <main className="text-white overflow-hidden">
     <Hero imagePosition="right" backgroundImage={data.backgroundImage}>
       <h1 className="text-center text-md2 pt-24 lg:text-lg lg:text-left font-regular font-extralight mb-4">Udruga za blockchain i kriptovalute</h1>
       <p className="text-base2 text-center lg:text-left font-hind font-normal lg:w-full pt-4 pb-12 lg:py-12">Obrazovanje, znanost, istraživanje te širenje svijesti o blockchain tehnologiji. </p>

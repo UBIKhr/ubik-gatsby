@@ -11,10 +11,10 @@ const CardList = ({ data }) => {
       <div className="">
       <div className="flex flex-col md:flex-row md:flex-wrap justify-start items-start">
         {data.map((card, index) => (
-           <Card imageWidthClass="4/5" key={index} {...card} />
+           <Card imageWidthClass="3/4" key={index} {...card} />
           ))}
         </div>  
-        <div className="absolute top-1/2 -right-8 lg:-right-20 transform translate-x-1/2 -translate-y-1/2">
+        <div className="hidden lg:block absolute top-1/2 -right-8 lg:-right-20 transform translate-x-1/2 -translate-y-1/2">
         <StaticImage
           src="../images/members.png"
           className="max-w-full max-h-full"

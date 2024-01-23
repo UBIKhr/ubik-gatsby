@@ -16,13 +16,14 @@ const ImageList = ({ data }) => {
               href={company.website}
               target="_blank"
               rel="noopener noreferrer"
-              className="m-2 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 lg:p-12"
+              className="m-2 w-full sm:w-1/2 md:w-1/3 lg:w-1/5 lg:p-12"
             >
               <GatsbyImage
                 image={getImage(company.logoUrl)}
                 alt={company.name}
-                className="w-1/2 md:w-full h-auto max-w-full max-h-full m-10 lg:mx-20"
+                className="w-1/2 md:w-full h-auto max-w-full max-h-full m-10 lg:mx-20 bg-white"
               />
+              
             </a>
           ))}
         </div>

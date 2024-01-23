@@ -106,63 +106,46 @@ const MembersPage = () => {
       socialLinks: [
         {
           name: "E-mail",
-          link: "mailto:ana@example.com",
+          link: "mailto: vlaho@hkod.hr",
           icon: data.mailIcon.childImageSharp.gatsbyImageData,
         },
         {
-          name: "Website",
-          link: "https://ana_website.com",
-          icon: data.webIcon.childImageSharp.gatsbyImageData,
-        },
-        {
           name: "LinkedIn",
-          link: "https://linkedin.com/in/ana_linkedin",
+          link: "https://hr.linkedin.com/in/vlaho-hrdalo",
           icon: data.linkedinIcon.childImageSharp.gatsbyImageData,
         },
       ],
     },
     {
       image: data.image2,
-      subtitle: 'Predsjednik',
       titleperson: 'Nikola Škorić',
       textperson: 'Nikola Škorić je osnivač i direktor Electrocoin d.o.o., u sastavu kojeg posluje vodeća hrvatska mjenjačnica kriptovaluta i platni sustav Paycek.',
       socialLinks: [
         {
           name: "Email",
-          link: "mailto:ana@example.com",
+          link: "mailto:nikola@ubik.hr",
           icon: data.mailIcon.childImageSharp.gatsbyImageData,
         },
         {
-          name: "Website",
-          link: "https://ana_website.com",
-          icon: data.webIcon.childImageSharp.gatsbyImageData,
-        },
-        {
           name: "LinkedIn",
-          link: "https://linkedin.com/in/ana_linkedin",
+          link: "https://www.linkedin.com/in/nskoric/",
           icon: data.linkedinIcon.childImageSharp.gatsbyImageData,
         },
       ],
     },
     {
       image: data.image3,
-      subtitle: 'Predsjednik',
       titleperson: 'Luka Sučić',
       textperson: 'Poduzetnik koji voli nove i neistražene stvari. Aktivno radi na razvoju proizvoda i ekosustava te kao partner u fondu za blockchain startupe MCC.',
       socialLinks: [
         {
           name: "Email",
-          link: "mailto:ana@example.com",
+          link: "mailto:luka@ubik.hr",
           icon: data.mailIcon.childImageSharp.gatsbyImageData,
         },
         {
-          name: "Website",
-          link: "https://ana_website.com",
-          icon: data.webIcon.childImageSharp.gatsbyImageData,
-        },
-        {
           name: "LinkedIn",
-          link: "https://linkedin.com/in/ana_linkedin",
+          link: "https://www.linkedin.com/in/lukasucic/",
           icon: data.linkedinIcon.childImageSharp.gatsbyImageData,
         },
       ],
@@ -175,86 +158,63 @@ const MembersPage = () => {
         socialLinks: [
           {
             name: "Email",
-            link: "mailto:ana@example.com",
+            link: "mailto:ivan@ubik.hr",
             icon: data.mailIcon.childImageSharp.gatsbyImageData,
           },
           {
-            name: "Website",
-            link: "https://ana_website.com",
-            icon: data.webIcon.childImageSharp.gatsbyImageData,
-          },
-          {
             name: "LinkedIn",
-            link: "https://linkedin.com/in/ana_linkedin",
+            link: "https://www.linkedin.com/in/ivanglavas/",
             icon: data.linkedinIcon.childImageSharp.gatsbyImageData,
           },
         ],
       },
       {
         image: data.image5,
-        subtitle: 'Predsjednik',
         titleperson: 'Bruno Škvorc',
         textperson: 'Bruno Škvorc je osnivač RMRK, NFT protokola na Kusama blockchain mreži.',
         socialLinks: [
           {
             name: "Email",
-            link: "mailto:ana@example.com",
+            link: "mailto:bruno@ubik.hr",
             icon: data.mailIcon.childImageSharp.gatsbyImageData,
           },
           {
-            name: "Website",
-            link: "https://ana_website.com",
-            icon: data.webIcon.childImageSharp.gatsbyImageData,
-          },
-          {
             name: "LinkedIn",
-            link: "https://linkedin.com/in/ana_linkedin",
+            link: "https://www.linkedin.com/in/swader/",
             icon: data.linkedinIcon.childImageSharp.gatsbyImageData,
           },
         ],
       },
       {
         image: data.image6,
-        subtitle: 'Predsjednik',
         titleperson: 'Boris Agatić',
-        textperson: 'Bruno Škvorc je osnivač RMRK, NFT protokola na Kusama blockchain mreži.',
+        textperson: 'Coder, Data Scientist, AI enthusiast, Blockchainer, UX designer',
         socialLinks: [
           {
             name: "Email",
-            link: "mailto:ana@example.com",
+            link: "mailto:boris@ubik.hr",
             icon: data.mailIcon.childImageSharp.gatsbyImageData,
           },
           {
-            name: "Website",
-            link: "https://ana_website.com",
-            icon: data.webIcon.childImageSharp.gatsbyImageData,
-          },
-          {
             name: "LinkedIn",
-            link: "https://linkedin.com/in/ana_linkedin",
+            link: "https://www.linkedin.com/in/borisagatic/",
             icon: data.linkedinIcon.childImageSharp.gatsbyImageData,
           },
         ],
       },
       {
         image: data.image7,
-        subtitle: 'Predsjednik',
         titleperson: 'Belma Gutlić',
         textperson: 'Belma Gutlić je suosnivačica akvizirane tvrtke NodeFactory, voditeljica Solutions odjela u ChainSafeu.',
         socialLinks: [
           {
             name: "Email",
-            link: "mailto:ana@example.com",
+            link: "mailto:belma@ubik.hr",
             icon: data.mailIcon.childImageSharp.gatsbyImageData,
           },
           {
-            name: "Website",
-            link: "https://ana_website.com",
-            icon: data.webIcon.childImageSharp.gatsbyImageData,
-          },
-          {
             name: "LinkedIn",
-            link: "https://linkedin.com/in/ana_linkedin",
+            link: "https://www.linkedin.com/in/belmagutlic/",
             icon: data.linkedinIcon.childImageSharp.gatsbyImageData,
           },
         ],
@@ -263,42 +223,41 @@ const MembersPage = () => {
 
   const temeljniClanovi = [
     {
-        name: 'Bitfall',
+        name: 'Bitfalls',
         logoUrl: data.image8,
-        website: 'https://linkedin.com/in/ana_linkedin',
+        website: 'https://www.linkedin.com/company/bitfalls/about/',
     },
     {
         name: 'Chainsafe',
         logoUrl: data.image9,
-        website: 'https://linkedin.com/in/ana_linkedin',
+        website: 'https://chainsafe.io/',
     },
     {
-        name: 'Electrocion',
+        name: 'Electrocoin',
         logoUrl: data.image10,
-        website: 'https://linkedin.com/in/ana_linkedin',
+        website: 'hhttps://electrocoin.eu/',
     },
     {
         name: 'Druga kozmicka',
         logoUrl: data.image11,
-        website: 'https://linkedin.com/in/ana_linkedin',
     },
     {
         name: 'HK',
         logoUrl: data.image12,
-        website: 'https://linkedin.com/in/ana_linkedin',
+        website: 'https://www.hkod.hr/',
     },
     {
         name: 'Shardlabs',
         logoUrl: data.image13,
-        website: 'https://linkedin.com/in/ana_linkedin',
+        website: 'https://shardlabs.io/',
     }
   ];
 
   return (
   
   <Layout>
-    <main className="text-white">
-        <section className="w-screen pt-20 bg-gradient-to-b from-gradient-start to-gradient-end">
+    <main className="text-white overflow-hidden">
+        <section className="px-5 lg:px-24 pt-20 bg-gradient-to-b from-gradient-start to-gradient-end">
         <TabComponent
           tabs={[
             { label: "Svi", key: "all" },

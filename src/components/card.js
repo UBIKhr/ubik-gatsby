@@ -1,7 +1,7 @@
 import React from "react";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 
-const Card = ({ image, titlefront, titleperson, subtitle, textfront, textperson, socialLinks, imageWidthClass, textlanguages }) => {
+const Card = ({ image, titlefront, titleperson, subtitle, textfront, textblue, textperson, socialLinks, imageWidthClass, textlanguages }) => {
   const cardImage = getImage(image);
 
   if (!cardImage) {
@@ -11,7 +11,7 @@ const Card = ({ image, titlefront, titleperson, subtitle, textfront, textperson,
   const altText = titlefront || titleperson || "Card Image";
 
   return (
-    <div className="max-w-xs mx-auto bg-transparent overflow-hidden text-center mt-8 lg:mt-16">
+    <div className="max-w-sm mx-auto bg-transparent overflow-hidden text-center mt-8 lg:mt-16">
       <GatsbyImage image={cardImage} alt={altText} 
         className={`w-${imageWidthClass}  object-contain mx-auto my-auto`}
         />
@@ -20,6 +20,7 @@ const Card = ({ image, titlefront, titleperson, subtitle, textfront, textperson,
         <h2 className="text-white font-regular text-md2 mb-2">{titlefront}</h2>
         <h2 className="text-white font-regular text-md mb-2 text-left pb-4">{titleperson}</h2>
         <p className="text-white font-hind text-xs">{textfront}</p>
+        <p className="text-cyan font-hind text-tiny text-left pb-2">{textblue}</p>
         <p className="text-white font-hind text-xs text-left">{textperson}</p>
         <p className="text-white font-hind text-tiny text-left pt-2">{textlanguages}</p>
 

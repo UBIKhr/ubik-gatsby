@@ -4,9 +4,8 @@ import Layout from "../components/layout"
 import Seo from "../components/seo";
 import { StaticImage } from 'gatsby-plugin-image';
 import CardList from "../components/cardlist.js";
-import { Link } from "gatsby";
 import Accordion from "../components/accordion.js";
-
+import Table from "../components/table.js";
 
 
 
@@ -44,7 +43,7 @@ const ArbitrazaPage = ({}) => {
           gatsbyImageData
         }
       }
-      image7: file(relativePath: { eq: "vlaho.png" }) {
+      image7: file(relativePath: { eq: "Hrdalo.png" }) {
         childImageSharp {
           gatsbyImageData
         }
@@ -54,23 +53,22 @@ const ArbitrazaPage = ({}) => {
           gatsbyImageData(layout: FIXED, width: 24, height: 24)
         }
       }
-      webIcon: file(relativePath: { eq: "web.png" }) {
-        childImageSharp {
-          gatsbyImageData(layout: FIXED, width: 24, height: 24)
-        }
-      }
       mailIcon: file(relativePath: { eq: "mail.png" }) {
         childImageSharp {
           gatsbyImageData(layout: FIXED, width: 24, height: 24)
         }
       }
-      
+      phoneIcon: file(relativePath: { eq: "phone.png" }) {
+        childImageSharp {
+          gatsbyImageData(layout: FIXED, width: 24, height: 24)
+        }
+      }
     }
   `);
     const upravniOdbor = [
         {
           image: data.image1,
-          subtitle: ' Odvjetnik u Porobija & Špoljarić d.o.o., ovlašteni medijator',
+          textblue: 'Odvjetnica u Porobija & Špoljarić d.o.o., ovlašteni medijator',
           titleperson: 'Dora Stazić',
           textperson: 'Područje stručnosti: ICT/TMT, ugovori, korporativno poslovanje',
           textlanguages: 'Jezici: engleski, hrvatski, španjolski',
@@ -85,11 +83,16 @@ const ArbitrazaPage = ({}) => {
               link: "https://hr.linkedin.com/in/dora-stazic",
               icon: data.linkedinIcon.childImageSharp.gatsbyImageData,
             },
+            {
+              name: "Phone",
+              link: "href='tel:+385911268200'",
+              icon: data.phoneIcon.childImageSharp.gatsbyImageData,
+            },
           ],
         },
         {
           image: data.image2,
-          subtitle: 'Voditelj digitalne imovine u Aircash-u, suosnivač u Pazar-u, ranije Fintech Koordinator u Hrvatskoj agenciji za nadzor financijskih usluga (Hanfa)',
+          textblue: 'Voditelj digitalne imovine u Aircash-u, suosnivač u Pazar-u, ranije Fintech Koordinator u Hrvatskoj agenciji za nadzor financijskih usluga (Hanfa)',
           titleperson: 'Filip Šaravanja',
           textperson: 'Područje stručnosti: Kriptoimovina, Tržište kapitala',
           textlanguages: 'Jezici: engleski, hrvatski',
@@ -108,7 +111,7 @@ const ArbitrazaPage = ({}) => {
         },
         {
           image: data.image3,
-          subtitle: 'Partner u Odvjetničkom društvu Hrdalo & Krnić, Ovlašteni sudski tumač za engleski jezik',
+          textblue: 'Partner u Odvjetničkom društvu Hrdalo & Krnić, Ovlašteni sudski tumač za engleski jezik',
           titleperson: 'Ivan Krnić',
           textperson: 'Područje stručnosti: fintech, blockchain, kriptovalute, pravo društava, trgovačko pravo, diplomacija, bankarstvo, financije, međunarodno pravo i izvoz',
           textlanguages: 'Jezici: engleski, hrvatski',
@@ -123,11 +126,16 @@ const ArbitrazaPage = ({}) => {
               link: "https://www.linkedin.com/in/ivan-krnic-39649812/",
               icon: data.linkedinIcon.childImageSharp.gatsbyImageData,
             },
+            {
+              name: "Phone",
+              link: "href='tel:+385911314666'",
+              icon: data.phoneIcon.childImageSharp.gatsbyImageData,
+            },
           ],
         },
         {
             image: data.image4,
-            subtitle: 'Managing partner u Odvjetničkom društvu Matulić Sumić & partneri d.o.o. sa sjedištem u Splitu, Hrvatska',
+            textblue: 'Managing partner u Odvjetničkom društvu Matulić Sumić & partneri d.o.o. sa sjedištem u Splitu, Hrvatska',
             titleperson: 'Ivan Sumić',
             textperson: 'Područje stručnosti: Pravo – blockchain, ICT, komercijalno, pomorsko, brodogradnja, opći sporovi i arbitraža',
             textlanguages: 'Jezici: engleski, hrvatski',
@@ -142,11 +150,16 @@ const ArbitrazaPage = ({}) => {
                 link: "https://www.linkedin.com/in/ivan-sumi%C4%87-153694182/",
                 icon: data.linkedinIcon.childImageSharp.gatsbyImageData,
               },
+              {
+                name: "Phone",
+                link: "href='tel:+385914375702'",
+                icon: data.phoneIcon.childImageSharp.gatsbyImageData,
+              },
             ],
           },
           {
             image: data.image5,
-            subtitle: 'Odvjetnik u Porobija & Špoljarić d.o.o., ovlašteni medijator',
+            textblue: 'Odvjetnik u Porobija & Špoljarić d.o.o., ovlašteni medijator',
             titleperson: 'Luka Porobija',
             textperson: 'Područje stručnosti: ICT/TMT, zaštita podataka, ugovori.',
             textlanguages: 'Jezici: engleski, hrvatski',
@@ -161,13 +174,18 @@ const ArbitrazaPage = ({}) => {
                 link: "https://www.linkedin.com/in/luka-porobija/",
                 icon: data.linkedinIcon.childImageSharp.gatsbyImageData,
               },
+              {
+                name: "Phone",
+                link: "href='tel:+385911819688'",
+                icon: data.phoneIcon.childImageSharp.gatsbyImageData,
+              },
             ],
           },
           {
             image: data.image6,
-            subtitle: ' Odvjetnik sa sjedištem u Splitu, Hrvatska',
+            textblue: ' Odvjetnik sa sjedištem u Splitu, Hrvatska',
             titleperson: 'Vedran Kologranić',
-            textperson: 'BPodručje stručnosti: Pravo – blockchain, ICT/TMT, korporativno, komercijalno, stečajno, autorska prava, opće parnice i arbitraža',
+            textperson: 'Područje stručnosti: Pravo blockchain, ICT/TMT, korporativno, komercijalno, stečajno, autorska prava, opće parnice i arbitraža',
             textlanguages: 'Jezici: engleski, hrvatski',
             socialLinks: [
               {
@@ -175,11 +193,16 @@ const ArbitrazaPage = ({}) => {
                 link: "mailto:vedrankologranic@gmail.com",
                 icon: data.mailIcon.childImageSharp.gatsbyImageData,
               },
+              {
+                name: "Phone",
+                link: "href='tel:+385913779300'",
+                icon: data.phoneIcon.childImageSharp.gatsbyImageData,
+              },
             ],
           },
           {
             image: data.image7,
-            subtitle: ' Partner u Odvjetničkom društvu Hrdalo & Krnic d.o.o., voditelj Legal Tech skupine Hrvatske odvjetničke komore, predsjednik UBIK-a, nastavnik na Sveučilištu u Zagrebu, ovlašteni sudski tumač za engleski jezik',
+            textblue: ' Partner u Odvjetničkom društvu Hrdalo & Krnic d.o.o., voditelj Legal Tech skupine Hrvatske odvjetničke komore, predsjednik UBIK-a, nastavnik na Sveučilištu u Zagrebu, ovlašteni sudski tumač za engleski jezik',
             titleperson: 'Vlaho Hrdalo',
             textperson: 'Područje stručnosti: fintech, blockchain, kriptovalute, pravo društava, trgovačko pravo, diplomacija, bankarstvo, financije, međunarodno pravo i izvoz.',
             textlanguages: 'Jezici: engleski, hrvatski',
@@ -194,13 +217,35 @@ const ArbitrazaPage = ({}) => {
                 link: "https://hr.linkedin.com/in/vlaho-hrdalo",
                 icon: data.linkedinIcon.childImageSharp.gatsbyImageData,
               },
+              {
+                name: "Phone",
+                link: "href='tel:+38598757833'",
+                icon: data.phoneIcon.childImageSharp.gatsbyImageData,
+              },
             ],
           },
+      ];
+      const tableData1 = [
+        { amount: "0 to 1.000.000,00 EUR", fee: "5.000,00 EUR" },
+        { amount: "1.000.000,00 to 5.000.000,00 EUR", fee: "7.500,00 EUR" },
+        { amount: "5.000.000,00 to 15.000.000,00 EUR", fee: "10.000,00 EUR" },
+        { amount: "15.000.000,00 to 50.000.000,00 EUR", fee: "20.000,00 EUR" },
+        { amount: "Above 50.000.000,00 EUR", fee: "50.000,00 EUR" },
+      ];
+
+      const tableData2 = [
+        {amount: "0 to 1.000.000,00 EUR", fee: "200,00 EUR"},
+        {amount: "1.000.000,00 EUR to 5.000.000,00 EUR", fee: "300,00 EUR"},
+        {amount: "1.000.000,00 EUR to 5.000.000,00 EUR", fee: "300,00 EUR"},
+        {amount: "5.000.000,00 to 15.000.000,00 EUR", fee: "400,00 EUR"},
+        {amount: "15.000.000,00 EUR to 50.000.000,00 EUR", fee: "650,00 EUR"},
+        {amount: "Above 50.000.000,00 EUR", fee: "1.000,00 EUR"},
+
       ];
 
   return (
   <Layout>
-    <main className="text-white">
+    <main className="text-white overflow-hidden">
         <section className="pt-20 lg:pt-32 2xl:pt-72 w-screen relative bg-gradient-to-b from-gradient-start to-gradient-end">
         <div className="px-4 lg:px-32 font-regular pt-12 lg:pt-0 2xl:pt-6">
             <h1 className="text-left text-md2 lg:text-xl lg:text-left font-regular font-extralight mb-4">UBIKourt</h1>
@@ -278,15 +323,54 @@ const ArbitrazaPage = ({}) => {
             <div>
             <div className="px-4 lg:px-32 font-regular pt-12 lg:pt-0">
             </div>
-              <h1 className="text-left text-md lg:text-lg lg:text-left font-regular font-extralight mb-4 pt-20">Arbitražna pravila</h1>   
-              <a download={`Arbitrazna pravila`} href={`/Pravila.pdf`} className={`  active:text-orange1 relative before:content-[''] before:absolute before:block before:w-full before:h-[2px] 
-              before:bottom-0 before:left-0 before:bg-orange1
-              before:hover:scale-x-100 before:scale-x-0 before:origin-top-left
-              before:transition before:ease-in-out text-orange1 before:duration-300 mr-4`}>Arbitražna pravila</a> 
-              <a download={`Arbitration rules`} href={`/Rules.pdf`} className={`text-orange1  active:text-orange1 relative before:content-[''] before:absolute before:block before:w-full before:h-[2px] 
-              before:bottom-0 before:left-0 before:bg-orange1
-              before:hover:scale-x-100 before:scale-x-0 before:origin-top-left
-              before:transition before:ease-in-out before:duration-300 ml-4`}>Arbitration rules</a> 
+              <h1 className="text-left text-md lg:text-lg lg:text-left font-regular font-extralight mb-4 pt-20">Administrative Fees</h1> 
+              <h1 className="text-left font-light lg:text-md text-base1 2xl:text-md2 pt-10 lg:pt-14 2xl:pt-16">Case Filing Fee</h1> 
+              <p className="text-tiny lg:text-base1 text-left font-hind 2xl:w-3/4 pt-4 pb-2">
+                A filing fee is applicable to all arbitrations administered by the UBIKourt.
+              </p>
+              <p className="text-tiny lg:text-base1 text-left font-hind 2xl:w-3/4 pt-4 pb-2">
+                A filing fee in a fixed amount of 2.000,00 EUR for cases with an amount in dispute up to 100.000,00 EUR is payable in advance with the Request for Arbitration, Reply to the Request and each Counterclaim and is non-refundable.
+              </p>
+              <p className="text-tiny lg:text-base1 text-left font-hind 2xl:w-3/4 pt-4 pb-2">
+               Additional filing fee in the amount of 500,00 EUR for each started 100.000,00 EUR in dispute is payable in cases where the amount in dispute exceeds 100.000,00 EUR up to a maximum filing fee in the amount of 25.000,00 EUR.
+              </p>
+              <p className="text-tiny lg:text-base1 text-left font-hind 2xl:w-3/4 pt-4 pb-2">
+               Filing fees cover all administrative and case management costs of UBIKourt, its Board and Secretariat.
+              </p>
+              <h1 className="text-left font-light lg:text-md text-base1 2xl:text-md2 pt-10 lg:pt-14 2xl:pt-16">Arbitrators’ Fees</h1> 
+              <Table data={tableData1} headerBackgroundColor="orange1" borderColor="orange1" />
+              <p className="text-tiny lg:text-base1 text-left font-hind 2xl:w-3/4 pt-4 pb-2">
+                The amount for each Arbitrator in the case is payable in advance with the Request for Arbitration, with an increase of 20% for the President of the Tribunal and in cases where the dispute is decided by a sole Arbitrator.
+              </p>
+              <p className="text-tiny lg:text-base1 text-left font-hind 2xl:w-3/4 pt-4 pb-2">
+                 The above fees are calculated on a fair time use basis of up to 20 hours of participation in the procedure. UBIKourt’s Board may require payment of additional fees in exceptional cases when such payment is reasonably justified by the complexity and the Arbitrators’ time and when this is requested by the Tribunal. In such cases the Board will decide within 7 days on the mode of payment, and the effect of the request on the pending case.
+              </p>
+              <p className="text-tiny lg:text-base1 text-left font-hind 2xl:w-3/4 pt-4 pb-2">
+                The above fees apply in cases where the parties and the Arbitrators do not agree on a higher fee. If the parties and the Arbitrators agree on a higher fee, the same fees have to apply to the entire Tribunal (with the 20% increase for the President of the Tribunal).
+              </p>
+               <p className="text-tiny lg:text-base1 text-left font-hind 2xl:w-3/4 pt-4 pb-2">
+                In cases where the tribunal decides to hold hearings in person, Arbitrators are justified in requesting reimbursement of their reasonable travel costs upon presenting the receipts.
+              </p>
+              <p className="text-tiny lg:text-base1 text-left font-hind 2xl:w-3/4 pt-4 pb-2">
+                The national taxes, if any, related to the amounts paid for participating in the arbitration will be borne by the arbitrators.
+              </p>
+              <h1 className="text-left font-light lg:text-md text-base1 2xl:text-md2 pt-10 lg:pt-14 2xl:pt-16">Experts’ Fees</h1> 
+              <p className="text-tiny lg:text-base1 text-left font-hind 2xl:w-3/4 pt-4 pb-2">
+              In cases where the Arbitral Tribunal appoints an Expert in accordance with the Arbitration Rules, the appointed Expert will be entitled to compensation based on time used on working on the case at the hourly rate of:
+              </p>
+              <Table data={tableData2} headerBackgroundColor="cyan" borderColor="cyan" />
+              <p className="text-tiny lg:text-base1 text-left font-hind 2xl:w-3/4 pt-4 pb-2">
+                Upon appointment of an expert by the Tribunal, the Tribunal will request advance payment of the Expert’s fees from the Parties for a number of hours the Tribunal finds appropriate for the task. The Tribunal will request payment of additional fees if the Expert’s time use reasonably exceeds the advance payment.
+              </p>
+              <p className="text-tiny lg:text-base1 text-left font-hind 2xl:w-3/4 pt-4 pb-2">
+                The above fees apply in case where the parties and the Expert do not agree on a higher fee.
+              </p>
+              <p className="text-tiny lg:text-base1 text-left font-hind 2xl:w-3/4 pt-4 pb-2">
+                In cases where the Tribunal decides to hold hearings in person, Experts are justified in requesting reimbursement of their reasonable travel costs upon presenting the receipts.
+              </p>
+              <p className="text-tiny lg:text-base1 text-left font-hind 2xl:w-3/4 pt-4 pb-2">
+                The national taxes, if any, related to the amounts paid for participating in the arbitration will be borne by the Experts.
+              </p>
             </div>
             </div>
         </section>

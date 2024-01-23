@@ -20,7 +20,7 @@ const ContactPage = ({}) => {
 
 
   return (<Layout>
-    <main className="text-white">
+    <main className="text-white overflow-hidden">
     <Hero imagePosition="right" backgroundImage={data.backgroundImage}>
       <Form />
     </Hero>
