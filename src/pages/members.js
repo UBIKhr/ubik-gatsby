@@ -228,14 +228,14 @@ const MembersPage = () => {
         website: 'https://www.linkedin.com/company/bitfalls/about/',
     },
     {
-        name: 'Chainsafe',
+        name: 'Electrocoin',
         logoUrl: data.image9,
-        website: 'https://chainsafe.io/',
+        website: 'hhttps://electrocoin.eu/',
     },
     {
-        name: 'Electrocoin',
+        name: 'Shardlabs',
         logoUrl: data.image10,
-        website: 'hhttps://electrocoin.eu/',
+        website: 'https://shardlabs.io/',
     },
     {
         name: 'Druga kozmicka',
@@ -247,9 +247,9 @@ const MembersPage = () => {
         website: 'https://www.hkod.hr/',
     },
     {
-        name: 'Shardlabs',
+        name: 'Chainsafe',
         logoUrl: data.image13,
-        website: 'https://shardlabs.io/',
+        website: 'https://chainsafe.io/',
     }
   ];
 
