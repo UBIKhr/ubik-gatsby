@@ -9,7 +9,7 @@ const ImageList = ({ data }) => {
   return (
     <div className="relative">
       <div className="">
-        <div className="flex flex-wrap">
+        <div className="relative flex flex-wrap items-center">
           {data.map((company) => (
             <a
               key={company.id}
