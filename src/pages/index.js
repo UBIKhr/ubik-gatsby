@@ -71,8 +71,8 @@ const IndexPage = ({}) => {
           ))}
         </div>     
       </section>
-      <section className="pt-20 lg:pt-72 w-screen flex flex-col lg:flex-row items-center">
-        <div className="w-full px-4 lg:px-32">
+      <section className="pt-20 lg:pt-72 w-screen flex flex-col lg:flex-row items-start">
+        <div className="w-full px-4 lg:px-32 pt-12">
           <h1 className="text-center text-lg lg:text-left font-regular font-extralight pb-12">O udruzi</h1>
           <p className="text-center text-base1 lg:text-left font-hind font-normal pb-8 2xl:w-1/2">Udruga za blockchain i kriptovalute (UBIK) osnovana je 13.12.2017. usvajanjem Statuta</p>
           <p className="text-center text-xs lg:text-left font-regular pb-12 2xl:w-2/3">Udruge na sjednici osnivačke Skupštine. Udruga je upisana u Registar udruga 18.01.2018. te sukladno ciljevima djeluje na području obrazovanja, znanosti i istraživanja. Rad Udruge je javan i svi članovi Udruge imaju pravo sudjelovati u radu Udruge sukladno odredbama Statuta i Zakona te pravo uvida u rad tijela i odluke koje njena tijela donose. Rad Udruge usmjeren je ka ispunjavanju ciljeva Udruge. Plan rada, stoga, logično proizlazi iz ciljeva.</p>

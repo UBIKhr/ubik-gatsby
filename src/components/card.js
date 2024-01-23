@@ -13,7 +13,7 @@ const Card = ({ image, titlefront, titleperson, subtitle, textfront, textblue, t
   return (
     <div className="max-w-sm mx-auto bg-transparent overflow-hidden text-center mt-8 lg:mt-16">
       <GatsbyImage image={cardImage} alt={altText} 
-        className={`w-${imageWidthClass}  object-contain mx-auto my-auto`}
+        className={`w-${imageWidthClass}  object-contain mx-auto my-auto p-6`}
         />
       <div className="p-6">
         <p className="text-cyan text-tiny font-hind mb-2 text-left">{subtitle}</p>

@@ -3,6 +3,7 @@ import { graphql, useStaticQuery } from 'gatsby';
 import Layout from "../components/layout"
 import Seo from "../components/seo";
 import PricesCard from "../components/pricescard.js";
+import Button from "../components/button.js";
 
 
 const JoinUsPage = () => {
@@ -42,6 +43,20 @@ const JoinUsPage = () => {
               changeColor: 'pink2',
         },
         {
+            price: "EUR 175",
+            type: "CORPORATE MEMBERSHIP",
+            list: [
+                "Benefits of regular members for up to 3 employees",
+                "The right to marketing activities (interviews or articles, use of the UBIK member badge)",
+                "Possibility of entry to organized business networking events for members",
+                "Networking and establishment of new business partnerships",
+                "1 free online consultation with a member of the UBIK Management board",
+                "Possibility to participate in UBIK events (through a lecturer or some other form of engagement)",
+                "Favorable fees for resolving disputes through UBIKourt",
+              ],
+              changeColor: 'pink1',
+        },
+        {
             price: "EUR 330",
             type: "CORE MEMBERSHIP",
             list: [
@@ -57,20 +72,6 @@ const JoinUsPage = () => {
               ],
               changeColor: 'cyan',
         },
-        {
-            price: "EUR 175",
-            type: "CORPORATE MEMBERSHIP",
-            list: [
-                "Benefits of regular members for up to 3 employees",
-                "The right to marketing activities (interviews or articles, use of the UBIK member badge)",
-                "Possibility of entry to organized business networking events for members",
-                "Networking and establishment of new business partnerships",
-                "1 free online consultation with a member of the UBIK Management board",
-                "Possibility to participate in UBIK events (through a lecturer or some other form of engagement)",
-                "Favorable fees for resolving disputes through UBIKourt",
-              ],
-              changeColor: 'pink1',
-        }
     ];
     return (
         <main className="text-white overflow-hidden">
@@ -82,11 +83,15 @@ const JoinUsPage = () => {
                 </div>
             </section>
             <section className="pt-12 px-4 lg:px-32">
-            <div className="flex flex-col lg:flex-row justify-start items-start lg:space-x-8 space-y-16 lg:space-y-0 mt-8 py-12">
-                {pricesData.map((card, index) => (
-                <PricesCard key={index} {...card} />
-      ))}
-    </div>
+                <div className="flex flex-col justify-center items-center">
+                    <div className="flex flex-col lg:flex-row justify-start items-start lg:space-x-8 space-y-16 lg:space-y-0 mt-8 py-12">
+                        {pricesData.map((card, index) => (
+                        <PricesCard key={index} {...card} />
+                        ))}
+                    </div>
+                    <a href="https://5esudghy7c4.typeform.com/to/Osckno1r" target="_blank" rel="noopener noreferrer"><Button className="w-full">Postani ČLAN</Button></a>
+                </div>
+                
             </section>
             </Layout>
         </main>

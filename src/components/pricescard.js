@@ -18,7 +18,7 @@ const PricesCard = ({ price, list, type, changeColor }) => {
         <span className={`text-sm text-center pt-12 text-${changeColor}`}>{type}</span>
         <ul className="p-4 text-left">
           {list.map((item, index) => (
-            <li key={index} className="mb-2 text-tiny">{item}</li>
+            <li key={index} className="mb-2 font-regular text-tiny">&#x2713; {item}</li>
           ))}
         </ul>
       </div>
