@@ -21,7 +21,7 @@ const ImageList = ({ data }) => {
               <GatsbyImage
                 image={getImage(company.logoUrl)}
                 alt={company.name}
-                className="w-1/2 md:w-full h-auto max-w-full max-h-full m-10 lg:mx-20 bg-white"
+                className="w-1/2 md:w-full h-auto max-w-full max-h-full m-10 lg:mx-20"
               />
               
             </a>

@@ -53,12 +53,12 @@ const MembersPage = () => {
           gatsbyImageData
         }
       }
-      image9: file(relativePath: { eq: "chainsafe.png" }) {
+      image9: file(relativePath: { eq: "electrocoin.png" }) {
         childImageSharp {
           gatsbyImageData
         }
       }
-      image10: file(relativePath: { eq: "electrocoin.png" }) {
+      image10: file(relativePath: { eq: "shardlabs.png" }) {
         childImageSharp {
           gatsbyImageData
         }
@@ -73,7 +73,7 @@ const MembersPage = () => {
           gatsbyImageData
         }
       }
-      image13: file(relativePath: { eq: "shardlabs.png" }) {
+      image13: file(relativePath: { eq: "chainsafe.png" }) {
         childImageSharp {
           gatsbyImageData
         }
