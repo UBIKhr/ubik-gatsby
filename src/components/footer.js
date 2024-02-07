@@ -2,6 +2,8 @@ import * as React from 'react';
 import { Link } from 'gatsby';
 import logo from '../images/logo.png';
 import footerimg from '../images/footer.png';
+import { GatsbyImage, getImage } from 'gatsby-plugin-image';
+import { graphql, useStaticQuery } from 'gatsby';
 
 const links = [
     {
@@ -30,7 +32,67 @@ const links = [
     },
   ];
 
+
+
 const Footer = () => {
+  
+  const data = useStaticQuery(graphql`
+      query {
+        linkedinIcon: file(relativePath: { eq: "linkedin.png" }) {
+          childImageSharp {
+            gatsbyImageData(layout: FIXED, width: 32, height: 32)
+          }
+        }
+        twitterIcon: file(relativePath: { eq: "twitter.png" }) {
+          childImageSharp {
+            gatsbyImageData(layout: FIXED, width: 32, height: 32)
+          }
+        }
+        instagramIcon: file(relativePath: { eq: "instagram.png" }) {
+          childImageSharp {
+            gatsbyImageData(layout: FIXED, width: 32, height: 32)
+          }
+        }
+        facebookIcon: file(relativePath: { eq: "facebook.png" }) {
+          childImageSharp {
+            gatsbyImageData(layout: FIXED, width: 32, height: 32)
+          }
+        }
+        youtubeIcon: file(relativePath: { eq: "youtube.png" }) {
+          childImageSharp {
+            gatsbyImageData(layout: FIXED, width: 32, height: 32)
+          }
+        }
+      }
+    `);
+
+    const socialLinks = [
+      {
+        name: "LinkedIn",
+        link: "https://www.linkedin.com/company/ubik-udruga-za-blockchain-i-kriptovalute/",
+        icon: data.linkedinIcon.childImageSharp.gatsbyImageData,
+      },
+      {
+        name: "Twitter",
+        link: "https://x.com/ubikhr",
+        icon: data.twitterIcon.childImageSharp.gatsbyImageData,
+      },
+      {
+        name: "Instagram",
+        link: "https://instagram.com/udruga_ubik",
+        icon: data.instagramIcon.childImageSharp.gatsbyImageData,
+      },
+      {
+        name: "Facebook",
+        link: "https://www.facebook.com/UBIK.hr",
+        icon: data.facebookIcon.childImageSharp.gatsbyImageData,
+      },
+      {
+        name: "Youtube",
+        link: "https://www.youtube.com/channel/UCkGBfraJol0oLQEYmkxb_ug",
+        icon: data.youtubeIcon.childImageSharp.gatsbyImageData,
+      },
+    ];
    return (
     <main className='w-full relative bg-gradient-end font-regular text-white px-5 py-8 lg:px-24  xl:px-32 lg:py-10'>
       <Link to="/" >
@@ -64,7 +126,21 @@ const Footer = () => {
         <div className='absolute top-0 right-0 bg-gradient-end hidden md:block'>
             <img src={footerimg}/>
         </div>
+      </div> 
+      <div className='flex flex-row justify-center items-center space-x-4 pt-6 lg:pt-0'>
+      {Array.isArray(socialLinks) &&
+            socialLinks.map((social, index) => (
+              <a key={index} href={social.link} target="_blank" rel="noopener noreferrer">
+                <GatsbyImage
+                image={getImage(social.icon)}
+                alt={`${social.name} icon`}
+                className="w-32 h-32"
+                imgStyle={{ borderRadius: "50%" }}
+                />
+              </a>
+          ))}
       </div>
+      
     </main>
 
    );

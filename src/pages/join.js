@@ -79,7 +79,12 @@ const JoinUsPage = () => {
             <section className="pt-20 lg:pt-60 2xl:pt-72 w-screen relative bg-gradient-to-b from-gradient-start to-gradient-end">
                 <div className="px-4 lg:px-32 font-regular pt-12 lg:pt-0 2xl:pt-6">
                     <h1 className="text-left text-md2 lg:text-xl lg:text-left font-regular font-extralight mb-4">Postani član</h1>
-                    <p className="text-tiny lg:text-base1 text-left font-regular font-normal lg:w-2/3 pt-4 pb-2 ">Odaberite svoje članstvo ako želite sudjelovati u našim aktivnostima, podržati rad te dati svoj doprinos u razvoju i rastu blockchain i crypto scene u Hrvatskoj.</p>
+                    <p className="text-tiny lg:text-base1 text-left font-regular font-normal lg:w-2/3 pt-4 pb-2 ">UBIK nudi jedinstvenu kombinaciju mogućnosti edukacije, sudjelovanja u zajednici i networkinga unutar lokalnog blockchain i kripto svijeta.
+                    </p>
+                    <p className="text-tiny lg:text-base1 text-left font-regular font-normal lg:w-2/3 pt-4 pb-2 ">Kao član, imat ćete pristup informativnim radionicama, susretima i ekskluzivnim grupama za lakšu navigaciju kroz malen, ali složen blockchain i kripto ekosustav. UBIK osigurava ugodno okruženje za osobe iz različitih društvenih sfera. Svaki aktivni član UBIK-a ima pravo na besplatno savjetovanje vezano uz sva pitanja oko blockchaina i kriptovaluta u razumnim okvirima.
+                    </p>
+                    <p className="text-tiny lg:text-base1 text-left font-regular font-normal lg:w-2/3 pt-4 pb-2 ">Nadalje, UBIK kontinuirano radi na promociji blockchain tehnologije i kriptovaluta te aktivno sudjeluje u educiranju i dijalogu s regulatorom, korporacijama, bankama i sličnim sudionicima ekosustava. Uz ostale pogodnosti, ostvarujete i znatne popuste na sve UBIK komercijalne projekte.
+                    </p>
                 </div>
             </section>
             <section className="pt-12 px-4 lg:px-32">

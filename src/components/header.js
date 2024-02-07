@@ -80,7 +80,7 @@ const Header = () => {
           {links.map((link) => (
             <li
               key={link.url}
-              className={`text-white uppercase pt-5 ${currentPath === link.url ? 'active:text-orange2' : ''} relative before:content-[''] before:absolute before:block before:w-full before:h-[2px] 
+              className={`text-white uppercase pt-5 ${currentPath === link.url ? 'active:text-orange2' : ''}  relative before:content-[''] before:absolute before:block before:w-full before:h-[2px] 
               before:bottom-0 before:left-0 before:bg-orange2
               before:hover:scale-x-100 before:scale-x-0 before:origin-top-left
               before:transition before:ease-in-out before:duration-300`}

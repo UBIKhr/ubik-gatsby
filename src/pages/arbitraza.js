@@ -6,6 +6,7 @@ import { StaticImage } from 'gatsby-plugin-image';
 import CardList from "../components/cardlist.js";
 import Accordion from "../components/accordion.js";
 import Table from "../components/table.js";
+import Button from "../components/button.js";
 
 
 
@@ -44,6 +45,16 @@ const ArbitrazaPage = ({}) => {
         }
       }
       image7: file(relativePath: { eq: "Hrdalo.png" }) {
+        childImageSharp {
+          gatsbyImageData
+        }
+      }
+      image8: file(relativePath: { eq: "motika.png" }) {
+        childImageSharp {
+          gatsbyImageData
+        }
+      }
+      image9: file(relativePath: { eq: "krmpotic.png" }) {
         childImageSharp {
           gatsbyImageData
         }
@@ -111,8 +122,8 @@ const ArbitrazaPage = ({}) => {
         },
         {
           image: data.image3,
-          textblue: 'Partner u Odvjetničkom društvu Hrdalo & Krnić, Ovlašteni sudski tumač za engleski jezik',
-          titleperson: 'Ivan Krnić',
+          textblue: 'Partner u Odvjetničkom društvu Hrdalo & Krnic, Ovlašteni sudski tumač za engleski jezik',
+          titleperson: 'Ivan Krnic',
           textperson: 'Područje stručnosti: fintech, blockchain, kriptovalute, pravo društava, trgovačko pravo, diplomacija, bankarstvo, financije, međunarodno pravo i izvoz',
           textlanguages: 'Jezici: engleski, hrvatski',
           socialLinks: [
@@ -224,22 +235,65 @@ const ArbitrazaPage = ({}) => {
               },
             ],
           },
+          {
+            image: data.image8,
+            textblue: 'Osnivačica odvjetničkog društva MOTIKA&Partneri sa sjedištem u Beogradu, Srbija.',
+            titleperson: 'Željka Motika',
+            textperson: 'Područje stručnosti: trgovačko pravo, korporativno pravo, tehnološke transakcije, intelektualno vlasništvo, softver, licenciranje tehnologije, akvizicije, digitalna imovina i inicijalne ponude tokena (ICOs)',
+            textlanguages: 'Jezici: engleski, srpski',
+            socialLinks: [
+              {
+                name: "Email",
+                link: "mailto:zeljka.motika@motika.co.rs",
+                icon: data.mailIcon.childImageSharp.gatsbyImageData,
+              },
+              {
+                name: "LinkedIn",
+                link: "https://www.linkedin.com/in/%C5%BEeljka-motika-00921b39/?originalSubdomain=rs",
+                icon: data.linkedinIcon.childImageSharp.gatsbyImageData,
+              },
+              {
+                name: "Phone",
+                link: "href='tel:+38162262852'",
+                icon: data.phoneIcon.childImageSharp.gatsbyImageData,
+              },
+            ],
+          },
+          {
+            image: data.image9,
+            textblue: 'Odvjetnička vježbenica s položenim pravosudnim ispitom u Hrdalo & Krnic odvjetničkom društvu d.o.o.',
+            titleperson: 'Karla Krmpotić',
+            textperson: 'Područje stručnosti: kripto compliance & VASP registracija, ICT/TMT, ugovori.',
+            textlanguages: 'Jezici: engleski, hrvatski',
+            socialLinks: [
+              {
+                name: "Email",
+                link: "mailto:karla@hkod.hr",
+                icon: data.mailIcon.childImageSharp.gatsbyImageData,
+              },
+              {
+                name: "LinkedIn",
+                link: "https://www.linkedin.com/in/karlakrmpoti%C4%87/",
+                icon: data.linkedinIcon.childImageSharp.gatsbyImageData,
+              },
+            ],
+          },
       ];
       const tableData1 = [
-        { amount: "0 to 1.000.000,00 EUR", fee: "5.000,00 EUR" },
-        { amount: "1.000.000,00 to 5.000.000,00 EUR", fee: "7.500,00 EUR" },
-        { amount: "5.000.000,00 to 15.000.000,00 EUR", fee: "10.000,00 EUR" },
-        { amount: "15.000.000,00 to 50.000.000,00 EUR", fee: "20.000,00 EUR" },
-        { amount: "Above 50.000.000,00 EUR", fee: "50.000,00 EUR" },
+        { amount: "0 - 1.000.000,00 EUR", fee: "5.000,00 EUR" },
+        { amount: "1.000.000,00 - 5.000.000,00 EUR", fee: "7.500,00 EUR" },
+        { amount: "5.000.000,00 - 15.000.000,00 EUR", fee: "10.000,00 EUR" },
+        { amount: "15.000.000,00 - 50.000.000,00 EUR", fee: "20.000,00 EUR" },
+        { amount: "> 50.000.000,00 EUR", fee: "50.000,00 EUR" },
       ];
 
       const tableData2 = [
-        {amount: "0 to 1.000.000,00 EUR", fee: "200,00 EUR"},
-        {amount: "1.000.000,00 EUR to 5.000.000,00 EUR", fee: "300,00 EUR"},
-        {amount: "1.000.000,00 EUR to 5.000.000,00 EUR", fee: "300,00 EUR"},
-        {amount: "5.000.000,00 to 15.000.000,00 EUR", fee: "400,00 EUR"},
-        {amount: "15.000.000,00 EUR to 50.000.000,00 EUR", fee: "650,00 EUR"},
-        {amount: "Above 50.000.000,00 EUR", fee: "1.000,00 EUR"},
+        {amount: "0 - 1.000.000,00 EUR", fee: "200,00 EUR"},
+        {amount: "1.000.000,00 EUR - 5.000.000,00 EUR", fee: "300,00 EUR"},
+        {amount: "1.000.000,00 EUR - 5.000.000,00 EUR", fee: "300,00 EUR"},
+        {amount: "5.000.000,00 - 15.000.000,00 EUR", fee: "400,00 EUR"},
+        {amount: "15.000.000,00 EUR - 50.000.000,00 EUR", fee: "650,00 EUR"},
+        {amount: "> 50.000.000,00 EUR", fee: "1.000,00 EUR"},
 
       ];
 
@@ -259,6 +313,8 @@ const ArbitrazaPage = ({}) => {
                 <li className="pb-2">Naknadno rješenje za nastale sporove.</li>
                 <li className=" pb-4">Rješavanje sporova vezanih za bilo koje nove tehnologije (AI…)</li>
             </ul>
+            <a href="mailto:ubikourt@ubik.hr"><Button className="w-full md:w-2/3 lg:w-1/3 2xl:w-1/3 mb-6">Javite nam se</Button></a>
+            <div className="flex flex-row items-center justify-start">
             <a download={`Arbitrazna pravila`} href={`/Pravila.pdf`} className={`  active:text-orange1 relative before:content-[''] before:absolute before:block before:w-full before:h-[2px] 
               before:bottom-0 before:left-0 before:bg-orange1
               before:hover:scale-x-100 before:scale-x-0 before:origin-top-left
@@ -266,7 +322,9 @@ const ArbitrazaPage = ({}) => {
               <a download={`Arbitration rules`} href={`/Rules.pdf`} className={`text-orange1  active:text-orange1 relative before:content-[''] before:absolute before:block before:w-full before:h-[2px] 
               before:bottom-0 before:left-0 before:bg-orange1
               before:hover:scale-x-100 before:scale-x-0 before:origin-top-left
-              before:transition before:ease-in-out before:duration-300 ml-4`}>Arbitration rules</a>   
+              before:transition before:ease-in-out before:duration-300 ml-4`}>Arbitration rules</a> 
+            </div>
+              
         </div>
         <div className="lg:absolute lg:block hidden top-4 lg:top-72 right-0 rotate-90 lg:right-20 transform translate-x-1/2 -translate-y-1/2">
         <StaticImage
@@ -279,6 +337,19 @@ const ArbitrazaPage = ({}) => {
             <div className="px-4 lg:px-32 font-regular pt-12 lg:pt-0">
             <h1 className="text-left text-md lg:text-lg lg:text-left font-regular font-extralight mb-4">Lista arbitara</h1>   
                  <CardList data={upravniOdbor} />
+            </div>
+            <div className="px-4 lg:px-32 font-regular pt-12 lg:pt-0">
+            <h1 className="text-left text-md lg:text-lg lg:text-left font-regular font-extralight mb-4 pt-12">Arbitražni odbor</h1>   
+            <ul className="text-tiny lg:text-sm text-left font-regular font-normal lg:w-1/2 pt-4 pb-4 ">
+                <li className=" pb-2">Predsjednik: Ivan Sumić</li>
+                <li className=" pb-2">Dopredsjednici: Vlaho Hrdalo, Luka Porobija</li>
+                <li className=" pb-4">Ostatak Odbora: Karla Krmpotić, Filip Šaravanja</li>
+            </ul>
+            <h1 className="text-left text-md lg:text-lg lg:text-left font-regular font-extralight mb-4">Tajništvo</h1>   
+            <ul className="text-tiny lg:text-sm text-left font-regular font-normal lg:w-1/2 pt-4 pb-4 ">
+                <li className=" pb-2">Tajnica: Lucija Glavaš</li>
+                <li className=" pb-4">Pomoćnica tajnice: Lara Fritz</li>
+            </ul>
             </div>
         </section>
         <section className="pt-20 w-screen relative">
@@ -323,54 +394,62 @@ const ArbitrazaPage = ({}) => {
             <div>
             <div className="px-4 lg:px-32 font-regular pt-12 lg:pt-0">
             </div>
-              <h1 className="text-left text-md lg:text-lg lg:text-left font-regular font-extralight mb-4 pt-20">Administrative Fees</h1> 
-              <h1 className="text-left font-light lg:text-md text-base1 2xl:text-md2 pt-10 lg:pt-14 2xl:pt-16">Case Filing Fee</h1> 
+              <h1 className="text-left text-md lg:text-lg lg:text-left font-regular font-extralight mb-4 pt-20">Administrativne pristojbe</h1> 
+              <h1 className="text-left font-light lg:text-md text-base1 2xl:text-md2 pt-10 lg:pt-14 2xl:pt-16">Naknada za podnošenje predmeta</h1> 
               <p className="text-tiny lg:text-base1 text-left font-hind 2xl:w-3/4 pt-4 pb-2">
-                A filing fee is applicable to all arbitrations administered by the UBIKourt.
+                Pristojba za podnošenje primjenjiva je na sve arbitraže koje vodi UBIKourt.
               </p>
               <p className="text-tiny lg:text-base1 text-left font-hind 2xl:w-3/4 pt-4 pb-2">
-                A filing fee in a fixed amount of 2.000,00 EUR for cases with an amount in dispute up to 100.000,00 EUR is payable in advance with the Request for Arbitration, Reply to the Request and each Counterclaim and is non-refundable.
+                Pristojba za podnošenje u fiksnom iznosu od 2.000,00 EUR za predmete s iznosom u sporu do 100.000,00 EUR plaća se unaprijed uz Zahtjev za arbitražu, Odgovor na zahtjev i svaku protutužbu te je nepovratna.
               </p>
               <p className="text-tiny lg:text-base1 text-left font-hind 2xl:w-3/4 pt-4 pb-2">
-               Additional filing fee in the amount of 500,00 EUR for each started 100.000,00 EUR in dispute is payable in cases where the amount in dispute exceeds 100.000,00 EUR up to a maximum filing fee in the amount of 25.000,00 EUR.
+               Dodatna pristojba za prijavu u iznosu od 500,00 EUR za svakih započetih 100.000,00 EUR u sporu plaća se u slučajevima kada iznos u sporu premašuje 100.000,00 EUR do maksimalnog iznosa pristojbe za prijavu u iznosu od 25.000,00 EUR.
               </p>
               <p className="text-tiny lg:text-base1 text-left font-hind 2xl:w-3/4 pt-4 pb-2">
-               Filing fees cover all administrative and case management costs of UBIKourt, its Board and Secretariat.
+               Pristojbe za prijavu pokrivaju sve administrativne troškove i troškove upravljanja predmetima UBIKourta, njegovog odbora i tajništva.
               </p>
-              <h1 className="text-left font-light lg:text-md text-base1 2xl:text-md2 pt-10 lg:pt-14 2xl:pt-16">Arbitrators’ Fees</h1> 
+              <h1 className="text-left font-light lg:text-md text-base1 2xl:text-md2 pt-10 lg:pt-14 2xl:pt-16">Naknade arbitara</h1> 
               <Table data={tableData1} headerBackgroundColor="orange1" borderColor="orange1" />
               <p className="text-tiny lg:text-base1 text-left font-hind 2xl:w-3/4 pt-4 pb-2">
-                The amount for each Arbitrator in the case is payable in advance with the Request for Arbitration, with an increase of 20% for the President of the Tribunal and in cases where the dispute is decided by a sole Arbitrator.
+                Iznos za svakog arbitra u predmetu plaća se unaprijed uz Zahtjev za arbitražu, uz povećanje od 20% za predsjednika suda i u slučajevima kada o sporu odlučuje arbitar pojedinac.
               </p>
               <p className="text-tiny lg:text-base1 text-left font-hind 2xl:w-3/4 pt-4 pb-2">
-                 The above fees are calculated on a fair time use basis of up to 20 hours of participation in the procedure. UBIKourt’s Board may require payment of additional fees in exceptional cases when such payment is reasonably justified by the complexity and the Arbitrators’ time and when this is requested by the Tribunal. In such cases the Board will decide within 7 days on the mode of payment, and the effect of the request on the pending case.
+                 Gore navedene naknade obračunavaju se na temelju poštenog korištenja vremena do 20 sati sudjelovanja u postupku. Odbor UBIKourta može zahtijevati plaćanje dodatnih pristojbi u iznimnim slučajevima kada je takvo plaćanje razumno opravdano složenošću i vremenom arbitara te kada to zahtijeva Sud. U takvim slučajevima Odbor će u roku od 7 dana odlučiti o načinu plaćanja i učinku zahtjeva na predmet koji je u tijeku.
               </p>
               <p className="text-tiny lg:text-base1 text-left font-hind 2xl:w-3/4 pt-4 pb-2">
-                The above fees apply in cases where the parties and the Arbitrators do not agree on a higher fee. If the parties and the Arbitrators agree on a higher fee, the same fees have to apply to the entire Tribunal (with the 20% increase for the President of the Tribunal).
+                Gore navedene naknade primjenjuju se u slučajevima kada se stranke i arbitri ne dogovore o višoj naknadi. Ako se stranke i arbitri dogovore o višoj naknadi, iste se naknade moraju primijeniti na cijeli sud (s povećanjem od 20% za predsjednika suda).
               </p>
                <p className="text-tiny lg:text-base1 text-left font-hind 2xl:w-3/4 pt-4 pb-2">
-                In cases where the tribunal decides to hold hearings in person, Arbitrators are justified in requesting reimbursement of their reasonable travel costs upon presenting the receipts.
+                U slučajevima kada sud odluči o održavanju saslušanja osobno, arbitri su opravdani u zahtjevu za nadoknadu svojih razumnih putnih troškova uz predočenje računa.
               </p>
               <p className="text-tiny lg:text-base1 text-left font-hind 2xl:w-3/4 pt-4 pb-2">
-                The national taxes, if any, related to the amounts paid for participating in the arbitration will be borne by the arbitrators.
+                Nacionalni porezi, ako postoje, vezani uz iznose plaćene za sudjelovanje u arbitraži, snosit će arbitri.
               </p>
-              <h1 className="text-left font-light lg:text-md text-base1 2xl:text-md2 pt-10 lg:pt-14 2xl:pt-16">Experts’ Fees</h1> 
+              <h1 className="text-left font-light lg:text-md text-base1 2xl:text-md2 pt-10 lg:pt-14 2xl:pt-16">Naknade stručnjaka</h1> 
               <p className="text-tiny lg:text-base1 text-left font-hind 2xl:w-3/4 pt-4 pb-2">
-              In cases where the Arbitral Tribunal appoints an Expert in accordance with the Arbitration Rules, the appointed Expert will be entitled to compensation based on time used on working on the case at the hourly rate of:
+              U slučajevima kada Arbitražni sud imenuje stručnjaka sukladno Pravilima o arbitraži, imenovani stručnjak ima pravo na naknadu temeljenu na korištenom vremenu rada na predmetu po satnici:
               </p>
               <Table data={tableData2} headerBackgroundColor="cyan" borderColor="cyan" />
               <p className="text-tiny lg:text-base1 text-left font-hind 2xl:w-3/4 pt-4 pb-2">
-                Upon appointment of an expert by the Tribunal, the Tribunal will request advance payment of the Expert’s fees from the Parties for a number of hours the Tribunal finds appropriate for the task. The Tribunal will request payment of additional fees if the Expert’s time use reasonably exceeds the advance payment.
+                Nakon imenovanja stručnjaka od strane suda, sud će zatražiti unaprijednu uplatu naknada stručnjaka od stranaka za broj sati koji sud smatra prikladnim za zadatak. Sud će zatražiti plaćanje dodatnih naknada ako se korištenje vremena stručnjaka razumno premaši unaprijednu uplatu.
               </p>
               <p className="text-tiny lg:text-base1 text-left font-hind 2xl:w-3/4 pt-4 pb-2">
-                The above fees apply in case where the parties and the Expert do not agree on a higher fee.
+                Gore navedene naknade primjenjuju se u slučajevima kada se stranke i stručnjaci ne dogovore o višoj naknadi.
               </p>
               <p className="text-tiny lg:text-base1 text-left font-hind 2xl:w-3/4 pt-4 pb-2">
-                In cases where the Tribunal decides to hold hearings in person, Experts are justified in requesting reimbursement of their reasonable travel costs upon presenting the receipts.
+                U slučajevima kada sud odluči o održavanju saslušanja osobno, stručnjaci su opravdani u zahtjevu za nadoknadu svojih razumnih putnih troškova uz predočenje računa.
               </p>
-              <p className="text-tiny lg:text-base1 text-left font-hind 2xl:w-3/4 pt-4 pb-2">
-                The national taxes, if any, related to the amounts paid for participating in the arbitration will be borne by the Experts.
+              <p className="text-tiny lg:text-base1 text-left font-hind 2xl:w-3/4 pt-4 pb-12">
+                Nacionalni porezi, ako postoje, vezani uz iznose plaćene za sudjelovanje u arbitraži, snosit će stručnjaci.
               </p>
+              <a download={`Arbitrazne naknade`} href={`/Naknade.pdf`} className={`  relative before:content-[''] before:absolute before:block before:w-full before:h-[2px] 
+              before:bottom-0 before:left-0 before:bg-orange1
+              before:hover:scale-x-100 before:scale-x-0 before:origin-top-left
+              before:transition before:ease-in-out text-white before:duration-300 mr-4`}>Arbitražne naknade</a> 
+              <a download={`Arbitration fees`} href={`/Fees.pdf`} className={`text-white  relative before:content-[''] before:absolute before:block before:w-full before:h-[2px] 
+              before:bottom-0 before:left-0 before:bg-orange1
+              before:hover:scale-x-100 before:scale-x-0 before:origin-top-left
+              before:transition before:ease-in-out before:duration-300 ml-4`}>Arbitration fees</a>   
             </div>
             </div>
         </section>
