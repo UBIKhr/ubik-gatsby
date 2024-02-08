@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 import Layout from "../components/layout"
 import Seo from "../components/seo";
 import PricesCard from "../components/pricescard.js";
-import Button from "../components/button.js";
+import TypeformLinks from "../components/typeformlink.js";
 
 export const query = graphql`
   query IndexPageQuery($language: String!) {
@@ -28,7 +28,7 @@ export const query = graphql`
 `;
 
 const JoinUsPage = ({ data }) => {
-    const { t } = useTranslation();
+    const { t, i18n } = useTranslation();
 
     const pricesData = [
         {
@@ -120,7 +120,7 @@ const JoinUsPage = ({ data }) => {
                                 <PricesCard key={index} {...card} />
                             ))}
                         </div>
-                        <a href="https://5esudghy7c4.typeform.com/to/Osckno1r" target="_blank" rel="noopener noreferrer"><Button className="w-full">{t("Postani član")}</Button></a>
+                        <TypeformLinks language={i18n.language} />
                     </div>
                 </section>
             </Layout>
