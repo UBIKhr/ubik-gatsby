@@ -3,6 +3,7 @@ import CardList from "./cardlist.js";
 import ImageList from "./imagelist.js";
 import { useI18next } from 'gatsby-plugin-react-i18next';
 import { Trans, useTranslation } from 'gatsby-plugin-react-i18next';
+import { graphql } from "gatsby";
 
 export const query = graphql`
   query ($language: String!) {

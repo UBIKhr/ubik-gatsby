@@ -1,5 +1,6 @@
 import * as React from "react";
 import { useTranslation } from "react-i18next";
+import { graphql } from "gatsby";
 
 export const query = graphql`
   query ($language: String!) {
