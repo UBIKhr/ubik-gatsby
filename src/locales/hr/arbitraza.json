@@ -1,0 +1,126 @@
+{
+    "newsletter": "Prijavi se na Newsletter",
+      "newsletter_email": "Upisi svoju email adresu...",
+      "newsletter_btn": "Pridruži se",
+      "upravniOdbor": [
+        {
+            "textblue": "Partner u Odvjetničkom društvu Hrdalo & Krnic d.o.o., voditelj Legal Tech skupine Hrvatske odvjetničke komore, predsjednik UBIK-a, nastavnik na Sveučilištu u Zagrebu, ovlašteni sudski tumač za engleski jezik",
+            "textpersona": "Područje stručnosti: fintech, blockchain, kriptovalute, pravo društava, trgovačko pravo, diplomacija, bankarstvo, financije, međunarodno pravo i izvoz",
+            "textlanguages": "Jezici: engleski, hrvatski"
+        },
+        {
+            "textblue": " Odvjetnik sa sjedištem u Splitu, Hrvatska",
+            "textpersona": "Područje stručnosti: Pravo – blockchain, ICT/TMT, korporativno, komercijalno, stečajno, autorska prava, opće parnice i arbitraža",
+            "textlanguages": "Jezici: engleski, hrvatski"
+        },
+        {
+            "textblue": " Odvjetnička vježbenica s položenim pravosudnim ispitom u Hrdalo & Krnic odvjetničkom društvu d.o.o.",
+            "textpersona": "Područje stručnosti: kripto compliance & VASP registracija, ICT/TMT, ugovori",
+            "textlanguages": "Jezici: hrvatski, engleski"
+        },
+        {
+            "textblue": "Partner u Odvjetničkom društvu Hrdalo & Krnic, Ovlašteni sudski tumač za engleski jezik",
+            "textpersona": "Područje stručnosti: fintech, blockchain, kriptovalute, pravo društava, trgovačko pravo, diplomacija, bankarstvo, financije, međunarodno pravo i izvoz",
+            "textlanguages": "Jezici: engleski, hrvatski"
+        },
+        {
+            "textblue": "Osnivačica odvjetničkog društva MOTIKA&Partneri sa sjedištem u Beogradu, Srbija",
+            "textpersona": "Područje stručnosti: trgovačko pravo, korporativno pravo, tehnološke transakcije, intelektualno vlasništvo, softver, licenciranje tehnologije, akvizicije, digitalna imovina i inicijalne ponude tokena (ICOs)",
+            "textlanguages": "Jezici: Engleski, Srpski"
+        },
+        {
+            "textblue": "Odvjetnik u Porobija & Špoljarić d.o.o., ovlašteni medijator",
+            "textpersona": "Područje stručnosti: ICT/TMT, zaštita podataka, ugovori",
+            "textlanguages": "Jezici: engleski, hrvatski"
+        },
+        {
+            "textblue": "Odvjetnica u Porobija & Špoljarić d.o.o., ovlašteni medijator",
+            "textpersona": "Područje stručnosti: ICT/TMT, ugovori, korporativno poslovanje",
+            "textlanguages": "Jezici: engleski, hrvatski, španjolski"
+        },
+        {
+            "textblue": "Managing partner u Odvjetničkom društvu Matulić Sumić & partneri d.o.o. sa sjedištem u Splitu, Hrvatska",
+            "textpersona": "Područje stručnosti: Pravo – blockchain, ICT, komercijalno, pomorsko, brodogradnja, opći sporovi i arbitraža",
+            "textlanguages": "Jezici: engleski, hrvatski"
+        },
+        {
+            "textblue": "Voditelj digitalne imovine u Aircash-u, suosnivač u Pazar-u, ranije Fintech Koordinator u Hrvatskoj agenciji za nadzor financijskih usluga (Hanfa)",
+            "textpersona": "Područje stručnosti: Kriptoimovina, Tržište kapitala",
+            "textlanguages": "Jezici: hrvatski, engleski"
+        }
+      ],
+      "UBIKourt je tijelo za rješavanje sporova UBIK-a - hrvatske Udruge za blockchain i kriptovalute. Nastao je primarno kao arbitražna institucija primjerena rješavanju sporova vezanih uz blockchain zbog nedostatka profesionalnog i stručnog načina rješavanja sporova kao što su:": "UBIKourt je tijelo za rješavanje sporova UBIK-a - hrvatske Udruge za blockchain i kriptovalute. Nastao je primarno kao arbitražna institucija primjerena rješavanju sporova vezanih uz blockchain zbog nedostatka profesionalnog i stručnog načina rješavanja sporova kao što su:",
+      "li1": "Standardni sporovi nevezani za blockchain tehnologiju",
+      "li2": "Sporovi vezani uz kriptoimovinu i pametne ugovore;",
+      "li3": "Rješavanje hitnih pitanja bilo koje vrste;",
+      "li4": "Pravnih mišljenja;",
+      "li5": "Prethodno rješenje za buduće potencijalne sporove;",
+      "li6": "Naknadno rješenje za nastale sporove.",
+      "li7": "Rješavanje sporova vezanih za bilo koje nove tehnologije (AI…)",
+      "Javite nam se": "Javite nam se",
+      "Arbitražna pravila": "Arbitražna pravila",
+      "/Pravila.pdf": "/Pravila.pdf",
+      "Lista arbitara": "Lista arbitara",
+      "Arbitražni odbor": "Arbitražni odbor",
+      "Predsjednik": "Predsjednik",
+      "Dopredsjednici": "Dopredsjednici",
+      "Ostatak Odbora": "Ostatak Odbora",
+      "Tajništvo": "Tajništvo",
+      "Tajnica": "Tajnica",
+      "Pomoćnica tajnice": "Pomoćnica tajnice",
+      "items": [
+        {
+            "title": "Koja je cijena pristojbi za rješavanje sporova putem UBIKourta?",
+            "content": "Kako bi se dokazala korisnost UBIKourta, prvih par slučajeva bit će odrađeno po pro bono principu. Za daljnje slučajeve biti će obračunata naknada za usluge UBIKourta, između ostalog i radi zaštite od spamova, kako bismo spriječili zlouporabu samog procesa. Temeljni i korporativni članovi UBIK-a ostvaruju pravo na povoljniju cijenu pristrojbe."
+        },
+        {
+            "title": "Kako UBIKourt funkcionira?",
+            "content": "Proces apliciranja jednostavno se obavlja putem web stranice ubik.hr. Na početku procesa potrebno je sklopiti ugovor o arbitraži kojim stranke podvrgavaju spor arbitraži u kojem obje stranke daju suglasnost o dobrovoljnom ulasku u spor is kojom istodobno prihvaćaju obvezatnost konačne odluke arbitražnog suda, bez obzira na prirodu dane odluke. UBIKourt održava jednu ili više listu arbitara koji su stručnjaci u području blockchaina i DLT-a. Osim toga, osigurava i ustrojstvo sudova te nadzire učinkovito vođenje postupaka."
+        },
+        {
+            "title": "Odvija li se uživo?",
+            "content": "Sva dokumentacija podnosi se elektroničkim putem i saslušanja svjedoka odvijaju se online, stoga nije potrebna fiziča prisutnost na određenom mjestu."
+        },
+        {
+            "title": "Koliko obično traje proces arbitraže?",
+            "content": "Čl. 30 UBIKourt arbitražnih pravila - vremensko ograničenje: Rok unutar kojeg arbitražni sud mora donijeti konačnu odluku je šest mjeseci. Propisano je kada rok počinje teći, te da ga Odbor može produžiti na vlastitu inicijativu ili na zahtjev arb. suda ako smatra da je to potrebno. Ipak, cilj je da proces traje što kraće."
+        },
+        {
+            "title": "Je li odluka arbitražnog tijela obvezujuća?",
+            "content": "Na početku arbitražnog spora potpisuje se ugovor u kojem obje stranke izjavljuju da se slažu s konačnom odlukom arbitražnog suda, bez obzira na prirodu dane odluke."
+        },
+        {
+            "title": "Tko može podnijeti slučaj tijelu za arbitražu?",
+            "content": "Bilo tko, pod uvjetom da je predmet arbitrabilan, tj. podoban za rješavanje arbitražom. Slučaj se dobrovoljno može podnijeti putem ubik.hr."
+        },
+        {
+            "title": "Što razlikuje UBIKourt od tradicionalnih pravnih procesa?",
+            "content": "UBIKourt nudi profesionalan, povjerljiv i stručan način rješavanja sporova unutar blockchain sektora. Stručnost osigurava angažiranjem eksperata u području blockchaina i DLT-a. Također, on pruža sve potrebne resurse i infrastrukturu za arbitražu."
+        },
+        {
+            "title": "Tko sve može biti arbitar?",
+            "content": "Arbitrom može postati osoba koja podnese valjan zahtjev i pokaže sposobnost za obavljanje tog zadatka, dok će konačnu procjenu o kompetentnosti osobe koja je podnijela zahtjev za vođenje sporova s visokom tehnološkom komponentom donijeti Upravni odbor UBIKourta arbitraže na sjednici."
+        }
+      ],
+      "Administrativne pristojbe": "Administrativne pristojbe",
+      "Naknada za podnošenje predmeta": "Naknada za podnošenje predmeta",
+      "Pristojba za podnošenje primjenjiva je na sve arbitraže koje vodi UBIKourt.": "Pristojba za podnošenje primjenjiva je na sve arbitraže koje vodi UBIKourt.",
+      "Pristojba za podnošenje u fiksnom iznosu od 2.000,00 EUR za predmete s iznosom u sporu do 100.000,00 EUR plaća se unaprijed uz Zahtjev za arbitražu, Odgovor na zahtjev i svaku protutužbu te je nepovratna.": "Pristojba za podnošenje u fiksnom iznosu od 2.000,00 EUR za predmete s iznosom u sporu do 100.000,00 EUR plaća se unaprijed uz Zahtjev za arbitražu, Odgovor na zahtjev i svaku protutužbu te je nepovratna.",
+      "Dodatna pristojba za prijavu u iznosu od 500,00 EUR za svakih započetih 100.000,00 EUR u sporu plaća se u slučajevima kada iznos u sporu premašuje 100.000,00 EUR do maksimalnog iznosa pristojbe za prijavu u iznosu od 25.000,00 EUR.": "Dodatna pristojba za prijavu u iznosu od 500,00 EUR za svakih započetih 100.000,00 EUR u sporu plaća se u slučajevima kada iznos u sporu premašuje 100.000,00 EUR do maksimalnog iznosa pristojbe za prijavu u iznosu od 25.000,00 EUR.",
+      "Pristojbe za prijavu pokrivaju sve administrativne troškove i troškove upravljanja predmetima UBIKourta, njegovog odbora i tajništva.": "Pristojbe za prijavu pokrivaju sve administrativne troškove i troškove upravljanja predmetima UBIKourta, njegovog odbora i tajništva.",
+      "Naknade arbitrara": "Naknade arbitrara",
+      "Iznos za svakog arbitra u predmetu plaća se unaprijed uz Zahtjev za arbitražu, uz povećanje od 20% za predsjednika suda i u slučajevima kada o sporu odlučuje arbitar pojedinac.": "Iznos za svakog arbitra u predmetu plaća se unaprijed uz Zahtjev za arbitražu, uz povećanje od 20% za predsjednika suda i u slučajevima kada o sporu odlučuje arbitar pojedinac.",
+      "Gore navedene naknade obračunavaju se na temelju poštenog korištenja vremena do 20 sati sudjelovanja u postupku. Odbor UBIKourta može zahtijevati plaćanje dodatnih pristojbi u iznimnim slučajevima kada je takvo plaćanje razumno opravdano složenošću i vremenom arbitara te kada to zahtijeva Sud. U takvim slučajevima Odbor će u roku od 7 dana odlučiti o načinu plaćanja i učinku zahtjeva na predmet koji je u tijeku.": "Gore navedene naknade obračunavaju se na temelju poštenog korištenja vremena do 20 sati sudjelovanja u postupku. Odbor UBIKourta može zahtijevati plaćanje dodatnih pristojbi u iznimnim slučajevima kada je takvo plaćanje razumno opravdano složenošću i vremenom arbitara te kada to zahtijeva Sud. U takvim slučajevima Odbor će u roku od 7 dana odlučiti o načinu plaćanja i učinku zahtjeva na predmet koji je u tijeku.",
+      "Gore navedene naknade primjenjuju se u slučajevima kada se stranke i arbitri ne dogovore o višoj naknadi. Ako se stranke i arbitri dogovore o višoj naknadi, iste se naknade moraju primijeniti na cijeli sud (s povećanjem od 20% za predsjednika suda).": "Gore navedene naknade primjenjuju se u slučajevima kada se stranke i arbitri ne dogovore o višoj naknadi. Ako se stranke i arbitri dogovore o višoj naknadi, iste se naknade moraju primijeniti na cijeli sud (s povećanjem od 20% za predsjednika suda).",
+      "U slučajevima kada sud odluči održati saslušanja uživo, arbitri imaju pravo tražiti naknadu svojih razumnih putnih troškova nakon predočenja potvrda.": "U slučajevima kada sud odluči održati saslušanja uživo, arbitri imaju pravo tražiti naknadu svojih razumnih putnih troškova nakon predočenja potvrda.",
+      "Nacionalne poreze, ako postoje, vezane uz iznose plaćene za sudjelovanje u arbitraži snosit će arbitri.": "Nacionalne poreze, ako postoje, vezane uz iznose plaćene za sudjelovanje u arbitraži snosit će arbitri.",
+      "Iznos spora": "Iznos spora",
+      "Naknade vještaka": "Naknade vještaka",
+      "Naknade stručnjaka": "Naknade stručnjaka",
+      "U slučajevima kada Arbitražni sud imenuje vještaka u skladu s Arbitražnim pravilima, imenovani vještak će imati pravo na naknadu na temelju vremena utrošenog na rad na predmetu po satnici od:": "U slučajevima kada Arbitražni sud imenuje vještaka u skladu s Arbitražnim pravilima, imenovani vještak će imati pravo na naknadu na temelju vremena utrošenog na rad na predmetu po satnici od:",
+      "Nakon imenovanja vještaka od strane Sudišta, Sudište će od stranaka zatražiti plaćanje naknade vještaku unaprijed za određeni broj sati koje Sudište smatra odgovarajućim za zadatak. Sudište će zatražiti isplatu dodatnih naknada ako vještakovo korištenje vremena razumno premašuje akontaciju.": "Nakon imenovanja vještaka od strane Sudišta, Sudište će od stranaka zatražiti plaćanje naknade vještaku unaprijed za određeni broj sati koje Sudište smatra odgovarajućim za zadatak. Sudište će zatražiti isplatu dodatnih naknada ako vještakovo korištenje vremena razumno premašuje akontaciju.",
+      "Gore navedene naknade primjenjuju se u slučajevima kada se stranke i Vještak ne dogovore o višoj naknadi.": "Gore navedene naknade primjenjuju se u slučajevima kada se stranke i Vještak ne dogovore o višoj naknadi.",
+      "U slučajevima kada Sudište odluči održati saslušanja uživo, vještaci imaju pravo zatražiti naknadu svojih razumnih putnih troškova nakon predočenja potvrda.": "U slučajevima kada Sudište odluči održati saslušanja uživo, vještaci imaju pravo zatražiti naknadu svojih razumnih putnih troškova nakon predočenja potvrda.",
+      "Nacionalne poreze, ako ih ima, povezane s iznosima plaćenim za sudjelovanje u arbitraži snosit će vještaci.": "Nacionalne poreze, ako ih ima, povezane s iznosima plaćenim za sudjelovanje u arbitraži snosit će vještaci.",
+      "/Naknade.pdf": "/Naknade.pdf"
+}

@@ -1,7 +1,26 @@
 import React, { useState } from "react";
 import { navigate } from "gatsby-link";
+import { Link, useI18next } from 'gatsby-plugin-react-i18next';
+import { Trans, useTranslation } from 'gatsby-plugin-react-i18next';
+
+export const query = graphql`
+  query ($language: String!) {
+    locales: allLocale(
+      filter: { ns: { in: ["common"] }, language: { eq: $language } }
+    ) {
+      edges {
+        node {
+          ns
+          data
+          language
+        }
+      }
+    }
+  }
+`;
 
 const Form = () => {
+  const { t } = useTranslation();
 
   const initialFormState = {
     name: "",
@@ -61,7 +80,7 @@ const Form = () => {
     
     .then(() => {
       setState(initialFormState);
-      navigate("/thankyou");
+      navigate("/");
     } )
     .catch((error) => alert(error));
 };
@@ -70,8 +89,8 @@ const Form = () => {
   return (
     <div className="relative w-full lg:w-auto flex flex-col justify-center overflow-hidden">
     <div className="w-full px-3 py-24 bg-transparent">
-        <h1 className="text-md2 lg:text-lg text-center lg:text-left font-regular font-extralight">
-            Kontaktiraj nas
+        <h1 className="text-md2 xl:text-lg lg:pt-14 xl:pt-0 text-center lg:text-left font-regular font-extralight">
+            <Trans i18nKey={"form_header"}>Kontaktiraj nas</Trans>
         </h1>
     <form
           onSubmit={handleSubmit}
@@ -87,7 +106,7 @@ const Form = () => {
                   type="text"
                   id="name"
                   name="name"
-                  placeholder="Ime i prezime"
+                  placeholder={t("form_name")}
                   value={state.name || ""}
                   onChange={handleChange}
                   className="w-full block px-4 py-3 mt-2 border-b border-cyan focus:outline-none"
@@ -104,7 +123,7 @@ const Form = () => {
                   type="email"
                   id="email"
                   name="email"
-                  placeholder="E-mail adresa"
+                  placeholder={t("form_email")}
                   value={state.email || ""}
                   onChange={handleChange}
                   className="w-full block px-4 py-3 mt-2 border-b border-cyan focus:outline-none"
@@ -119,7 +138,7 @@ const Form = () => {
                   type="text"
                   id="subject"
                   name="subject"
-                  placeholder="Naslov"
+                  placeholder={t("form_subject")}
                   value={state.subject || ""}
                   onChange={handleChange}
                   className="w-full block px-4 py-3 mt-2 border-b border-cyan focus:outline-none"
@@ -134,7 +153,7 @@ const Form = () => {
                   type="message"
                   id="message"
                   name="message"
-                  placeholder="Poruka"
+                  placeholder={t("form_message")}
                   value={state.message || ""}
                   onChange={handleChange}
                   className="w-full block px-4 py-3 mt-2 border-b border-cyan focus:outline-none"
@@ -147,8 +166,8 @@ const Form = () => {
             <div className="mb-6 grid grid-cols-1 place-content-center">
               <button type="submit" className="relative overflow-hidden
                 py-3 px-16 font-regular uppercase font-base1 font-medium text-white bg-transparent 
-                border border-pink1 rounded-full w-full lg:w-2/3 2xl:w-1/2
-                transition-colors duration-300 ease-in-out hover:bg-pink1 hover:text-background">POŠALJI PORUKU</button>
+                border border-pink1 rounded-full
+                transition-colors duration-300 ease-in-out hover:bg-pink1 hover:text-background"><Trans i18nKey={"form_btn"}>POŠALJI PORUKU</Trans></button>
             </div>
            
           </form>

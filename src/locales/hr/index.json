@@ -1,5 +1,4 @@
 {
-    "home": {
       "title": "Udruga za Blockchain i Kriptovalute",
       "content": "Obrazovanje, znanost, istraživanje te širenje svijesti o blockchain tehnologiji.",
       "buttonText": "Postani ČLAN",
@@ -19,7 +18,9 @@
       ],
       "aboutTitle": "O udruzi",
       "aboutContent1": "Udruga za Blockchain i Kriptovalute (UBIK) osnovana je 13. prosinca 2017. godine usvajanjem Statuta na osnivačkoj Skupštini.",
-      "aboutContent2": "Udruga je upisana u Registar udruga 18. siječnja 2018. godine. Sukladno svojim ciljevima, djeluje na području obrazovanja, znanosti i istraživanja. Rad Udruge je javan i svi članovi Udruge imaju pravo sudjelovati u radu Udruge sukladno odredbama Statuta i Zakona."
-    }
-  }
+      "aboutContent2": "Udruga je upisana u Registar udruga 18. siječnja 2018. godine. Sukladno svojim ciljevima, djeluje na području obrazovanja, znanosti i istraživanja. Rad Udruge je javan i svi članovi Udruge imaju pravo sudjelovati u radu Udruge sukladno odredbama Statuta i Zakona.",
+      "newsletter": "Prijavi se na Newsletter",
+      "newsletter_email": "Upisi svoju email adresu...",
+      "newsletter_btn": "Pridruži se"
+}
   

@@ -1,0 +1,31 @@
+{
+    "tabs_upravni": "Management",
+    "tabs_temeljni":"Core members",
+    "newsletter": "Subscribe to Newsletter",
+    "newsletter_email": "Your email address...",
+    "newsletter_btn": "Join",
+    "upravniOdbor": [
+        {
+        "subtitle": "President",
+        "textperson": "Vlaho Hrdalo is a lawyer who focuses on fintech, blockchain, and cryptocurrencies in his professional and scientific work."
+        },
+        {
+        "textperson": "Nikola Škorić is the founder and CEO of Electrocoin Ltd., which operates the leading Croatian cryptocurrency exchange and payment system Paycek."
+        },
+        {
+        "textperson": "Entrepreneur who loves new and unexplored things. Actively working on product and ecosystem development and as a partner in the MCC blockchain startup fund."
+        },
+        {
+        "textperson": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas."
+        },
+        {
+        "textperson": "Bruno Škvorc is the founder of RMRK, an NFT protocol on the Kusama blockchain network."
+        },
+        {
+        "textperson": "Coder, Data Scientist, AI enthusiast, Blockchainer, UX designer"
+        },
+        {
+        "textperson": "Belma Gutlić is the co-founder of the acquired company NodeFactory and head of the Solutions department at ChainSafe."
+        }
+        ]
+}

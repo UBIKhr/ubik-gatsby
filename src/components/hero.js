@@ -16,7 +16,7 @@ const Hero = ({ imagePosition, backgroundImage, children }) => {
         />
       </div>
       <div className="w-full text-white ">
-      <div className="container mx-auto w-full px-4 lg:pl-32"> 
+      <div className="container mx-auto w-full px-4 lg:pl-32 flex flex-col justif-center items-center lg:justify-start lg:items-start"> 
           {children}
         </div>
       </div>

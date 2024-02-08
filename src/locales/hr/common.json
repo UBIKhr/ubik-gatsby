@@ -1,10 +1,22 @@
 {
-    "header": {
-      "home": "Početna",
-      "blog": "Blog",
-      "arbitration": "ARBITRAŽA",
-      "members": "Članovi",
-      "contact": "Kontakt"
-    }
-  }
+  "homepage": "Početna",
+  "blog": "Blog",
+  "arbitration": "ARBITRAŽA",
+  "members": "Članovi",
+  "contact": "Kontakt",
+  "bcm": "Postani član",
+  "phone": "Kontakt telefon:",
+  "regbr": "Registarski broj",
+  "racun": "Transakcijski račun",
+  "form_headline": "Kontaktiraj nas",
+  "form_name": "Ime i prezime",
+  "form_email": "E-mail adresa",
+  "form_subject": "Naslov",
+  "form_message": "Poruka",
+  "form_btn": "Pošalji poruku",
+  "tabs_members": "Naši članovi",
+  "Amount in Dispute": "Iznos spora",
+  "Arbitrator's Fee": "Naknade vještaka",
+  "Naknade stručnjaka": "Naknade stručnjaka" 
+}
   

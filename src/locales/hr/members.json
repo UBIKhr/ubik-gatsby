@@ -1,0 +1,31 @@
+{
+    "tabs_upravni": "Upravni odbor",
+    "tabs_temeljni": "Temeljni članovi",
+    "newsletter": "Prijavi se na Newsletter",
+    "newsletter_email": "Upisi svoju email adresu...",
+    "newsletter_btn": "Pridruži se",
+    "upravniOdbor": [
+        {
+            "subtitle": "Predsjednik",
+            "textperson": "Vlaho Hrdalo je odvjetnik koji se u svom profesionalnom i znanstvenom radu fokusira na fintech, blockchain i kriptovalute."
+        },
+        {
+            "textperson": "Nikola Škorić je osnivač i direktor Electrocoin d.o.o., u sastavu kojeg posluje vodeća hrvatska mjenjačnica kriptovaluta i platni sustav Paycek."
+        },
+        {
+            "textperson": "Poduzetnik koji voli nove i neistražene stvari. Aktivno radi na razvoju proizvoda i ekosustava te kao partner u fondu za blockchain startupe MCC."
+        },
+        {
+            "textperson": "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas."
+        },
+        {
+            "textperson": "Bruno Škvorc je osnivač RMRK, NFT protokola na Kusama blockchain mreži."
+        },
+        {
+            "textperson": "Coder, Data Scientist, AI enthusiast, Blockchainer, UX designer"
+        },
+        {
+            "textperson": "Belma Gutlić je suosnivačica akvizirane tvrtke NodeFactory, voditeljica Solutions odjela u ChainSafeu."
+        }
+    ] 
+}

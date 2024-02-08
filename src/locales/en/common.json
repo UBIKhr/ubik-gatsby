@@ -1,10 +1,21 @@
 {
-    "header": {
-      "home": "Home",
-      "blog": "Blog",
-      "arbitration": "Arbitration",
-      "members": "Members",
-      "contact": "Contact"
-    }
-  }
+  "homepage": "Home",
+  "blog": "Blog",
+  "arbitration": "Arbitration",
+  "members": "Members",
+  "contact": "Contact",
+  "bcm": "Become a member",
+  "phone": "Contact phone:",
+  "regbr": "Registration number",
+  "racun": "Transaction account",
+  "form_header": "Contact us",
+  "form_name": "Your name",
+  "form_email": "Yout email",
+  "form_subject": "Subject",
+  "form_message": "Message",
+  "form_btn": "Send message",
+  "tabs_members": "Our members",
+  "Amount in Dispute": "Amount in Dispute",
+  "Arbitrator's Fee": "Arbitrator's Fee" 
+}
   

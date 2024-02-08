@@ -1,6 +1,6 @@
 import * as React from "react";
 
-const PricesCard = ({ price, list, type, changeColor }) => {
+const PricesCard = ({ price, list, type, peryear, changeColor }) => {
     const [isHovered, setIsHovered] = React.useState(false);
 
     return (
@@ -13,7 +13,7 @@ const PricesCard = ({ price, list, type, changeColor }) => {
             <span className={`text-md text-${changeColor}`}>
             {price}
             </span>
-            <p>godišnje</p>
+            <p>{peryear}</p>
         </div>
         <span className={`text-sm text-center pt-12 text-${changeColor}`}>{type}</span>
         <ul className="p-4 text-left">

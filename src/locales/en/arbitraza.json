@@ -1,0 +1,125 @@
+{
+    "newsletter": "Subscribe to Newsletter",
+    "newsletter_email": "Your email address...",
+    "newsletter_btn": "Join",
+    "upravniOdbor": [
+        {
+            "textblue": "Partner at Hrdalo & Krnic Law Firm, Head of Legal Tech at Croatian Bar Assoc, Chairman at UBIK.hr, Teacher at University of Zagreb, Certified court interpreter of English",
+            "textpersona": "Area of expertise: fintech, blockchain, cryptocurrencies, company law, commercial law, diplomacy, banking, finance, international law, and export",
+            "textlanguages": "Languages: English, Croatian"
+        },
+        {
+            "textblue": "Attorney-at-law based in Split, Croatia",
+            "textpersona": "Area of expertise: Legal – blockchain, ICT/TMT, corporate, commercial, bankruptcy and insolvency, copyright, general litigation and arbitration",
+            "textlanguages": "Languages: English, Croatian"
+        },
+        {
+            "textblue": "Senior legal associate at Hrdalo & Krnic LLC Law Firm",
+            "textpersona": "Area of expertise: crypto-related compliance & crypto companies/VASP licensing, ICT/TMT, contracts",
+            "textlanguages": "Languages: croatian, english"
+        },
+        {
+            "textblue": "Partner at Hrdalo & Krnic Law Firm, Certified court interpreter of English",
+            "textpersona": "Area of expertise: fintech, blockchain, cryptocurrencies, company law, commercial law, diplomacy, banking, finance, international law, and export",
+            "textlanguages": "Languages: English, Croatian"
+        },
+        {
+            "textblue": "Founder of MOTIKA&Partners, the law firm, headquartered in Belgrade, Serbia",
+            "textpersona": "Area of expertise: Commercial law, corporate law, technology transactions, intellectual property, software, technology licensing, acquisitions, digital assets and Initial Coin Offerings (ICOs)",
+            "textlanguages": "Languages: English, Serbian"
+        },
+        {
+            "textblue": "Attorney at law at Porobija & Špoljarić LLC, Certified Mediator",
+            "textpersona": "Area of expertise: ICT/TMT, data protection, contracts",
+            "textlanguages": "Languages: English, Croatian"
+        },
+        {
+            "textblue": "Professional background: Attorney at law at Porobija & Špoljarić LLC, Certified Mediator",
+            "textpersona": "Area of expertise: ICT/TMT, Contracts, Corporate",
+            "textlanguages": "Languages: English, Croatian, Spanish"
+        },
+        {
+            "textblue": "Managing partner at Law Firm Matulić Sumić & partners llc, based in Split, Croatia",
+            "textpersona": "Area of expertise: Legal – blockchain, ICT, commercial, maritime, shipping and shipbuilding, general litigation and arbitration",
+            "textlanguages": "Languages: English, Croatian"
+        },
+        {
+            "textblue": "Head of Digital Assets at Aircash, Co-Founder at Pazar, former Fintech Coordinator at The Croatian Financial Services Supervisory Agency (Hanfa)",
+            "textpersona": "Area of expertise: Crypto Assets, Capital Markets",
+            "textlanguages": "Languages: Croatian, English"
+        }
+      ],
+      "UBIKourt je tijelo za rješavanje sporova UBIK-a - hrvatske Udruge za blockchain i kriptovalute. Nastao je primarno kao arbitražna institucija primjerena rješavanju sporova vezanih uz blockchain zbog nedostatka profesionalnog i stručnog načina rješavanja sporova kao što su:": "UBIKourt is a dispute resolution body of UBIK – Croatian Blockchain and Crypto Association. Formed primarily as the arbitration institution in the blockchain space for the blockchain space. It serves the purpose of professional, unbiased and expert objective on the dispute in question, such as:",
+      "li1": "Standard disputes unrelated to blockchain technology;",
+      "li2": "Crypto and smart contracts related disputes;",
+      "li3": "Emergency issues of any kind;",
+      "li4": "LegOps;",
+      "li5": "Pre-solution of dispute resolution;",
+      "li6": "Post-solution for dispute resolution;",
+      "li7": "Dispute resolution regarding any emerging technology sector (AI…)",
+      "Javite nam se": "Contact us",
+      "Arbitražna pravila": "Arbitration rules",
+      "/Pravila.pdf": "/Rules.pdf",
+      "Lista arbitara": "List of arbitrators",
+      "Arbitražni odbor": "Board of arbitrators",
+      "Predsjednik": "President",
+      "Dopredsjednici": "Vicepresidents",
+      "Ostatak Odbora": "Members",
+      "Tajništvo": "Secretary",
+      "Tajnica": "Head Secretary",
+      "Pomoćnica tajnice": "Assistant Secretary",
+      "items": [
+        {
+            "title": "What is the fee for resolving disputes through UBIKourt?",
+            "content": "To demonstrate the utility of UBIKourt, the first few cases will be handled on a pro bono basis. For subsequent cases, a fee for UBIKourt services will be charged, including to prevent spam and misuse of the process. Basic and corporate members of UBIK are entitled to a discounted fee."
+        },
+        {
+            "title": "How does UBIKourt operate?",
+            "content": "The application process is straightforward through the website ubik.hr. At the outset, parties are required to enter into an arbitration agreement, submitting their dispute to arbitration. Both parties voluntarily engage in the dispute resolution process, simultaneously accepting the binding nature of the final decision of the arbitration tribunal, regardless of the nature of that decision. UBIKourt maintains one or more UBIKourt lists of arbitrators who are experts in the field of blockchain and DLT. Additionally, it ensures the establishment of courts and oversees the effective conduct of proceedings."
+        },
+        {
+            "title": "Does it take place in real-time?",
+            "content": "All documentation is submitted electronically, and witness hearings are conducted online. Therefore, physical presence at a specific location is not required."
+        },
+        {
+            "title": "How long does the arbitration process usually take?",
+            "content": "According to Article 30 of the UBIKourt arbitration rules, there is a time limit. The time limit within which the arbitral tribunal must render its final award is six months. The rules specify when this timeframe starts, and the Board may extend the time limit pursuant to a request from the arbitral tribunal or on its own initiative if it decides it is necessary to do so. However, the goal is to ensure that the process is as expeditious as possible."
+        },
+        {
+            "title": "Is the decision of the arbitration body binding?",
+            "content": "At the commencement of the arbitration dispute, a contract is signed in which both parties declare their agreement with the final decision of the arbitration tribunal, irrespective of the nature of that decision."
+        },
+        {
+            "title": "Who can submit a case to the arbitration body?",
+            "content": "Anyone, provided that the subject matter is arbitrable, i.e., suitable for resolution through arbitration. The case can be voluntarily submitted via ubik.hr."
+        },
+        {
+            "title": "What sets UBIKourt apart from traditional legal processes?",
+            "content": "UBIKourt provides a professional, confidential, and specialized method for resolving disputes within the blockchain sector. Its expertise is ensured by engaging experts in the field of blockchain and DLT. Additionally, it offers all the necessary resources and infrastructure for arbitration."
+        },
+        {
+            "title": "Who can be appointed as an arbitrator?",
+            "content": "An arbitrator can be any individual who submits a valid application and demonstrates the ability to perform the task. The final assessment of the competence of the person submitting the application for handling disputes with a high technological component will be made by the UBIKourt Arbitration Board during a meeting."
+        }
+      ],
+      "Administrativne pristojbe": "Administrative Fees",
+      "Naknada za podnošenje predmeta": "Case Filing Fee",
+      "Pristojba za podnošenje primjenjiva je na sve arbitraže koje vodi UBIKourt.": "A filing fee is applicable to all arbitrations administered by the UBIKourt.",
+      "Pristojba za podnošenje u fiksnom iznosu od 2.000,00 EUR za predmete s iznosom u sporu do 100.000,00 EUR plaća se unaprijed uz Zahtjev za arbitražu, Odgovor na zahtjev i svaku protutužbu te je nepovratna.": "A filing fee in a fixed amount of 2.000,00 EUR for cases with an amount in dispute up to 100.000,00 EUR is payable in advance with the Request for Arbitration, Reply to the Request and each Counterclaim and is non-refundable.",
+      "Dodatna pristojba za prijavu u iznosu od 500,00 EUR za svakih započetih 100.000,00 EUR u sporu plaća se u slučajevima kada iznos u sporu premašuje 100.000,00 EUR do maksimalnog iznosa pristojbe za prijavu u iznosu od 25.000,00 EUR.": "Additional filing fee in the amount of 500,00 EUR for each started 100.000,00 EUR in dispute is payable in cases where the amount in dispute exceeds 100.000,00 EUR up to a maximum filing fee in amount of 25.000,00 EUR.",
+      "Pristojbe za prijavu pokrivaju sve administrativne troškove i troškove upravljanja predmetima UBIKourta, njegovog odbora i tajništva.": "Filing fees cover all administrative and case management costs of UBIKourt, its Board and Secretariat.",
+      "Naknade arbitrara": "Arbitrators` Fees",
+      "Iznos za svakog arbitra u predmetu plaća se unaprijed uz Zahtjev za arbitražu, uz povećanje od 20% za predsjednika suda i u slučajevima kada o sporu odlučuje arbitar pojedinac.": "The amount for each Arbitrator in the case is payable in advance with the Request for Arbitration, with an increase of 20% for the President of the Tribunal and in cases where the dispute is decided by a sole Arbitrator.",
+      "Gore navedene naknade obračunavaju se na temelju poštenog korištenja vremena do 20 sati sudjelovanja u postupku. Odbor UBIKourta može zahtijevati plaćanje dodatnih pristojbi u iznimnim slučajevima kada je takvo plaćanje razumno opravdano složenošću i vremenom arbitara te kada to zahtijeva Sud. U takvim slučajevima Odbor će u roku od 7 dana odlučiti o načinu plaćanja i učinku zahtjeva na predmet koji je u tijeku.": "The above fees are calculated on a fair time use basis of up to 20 hours of participation in the procedure. UBIKourt’s Board may require payment of additional fees in exceptional cases when such payment is reasonably justified by the complexity and the Arbitrators’ time and when this is requested by the Tribunal. In such cases the Board will decide within 7 days on the mode of payment, and the effect of the request on the pending case.",
+      "Gore navedene naknade primjenjuju se u slučajevima kada se stranke i arbitri ne dogovore o višoj naknadi. Ako se stranke i arbitri dogovore o višoj naknadi, iste se naknade moraju primijeniti na cijeli sud (s povećanjem od 20% za predsjednika suda).": "The above fees apply in cases where the parties and the Arbitrators do not agree on a higher fee. If the parties and the Arbitrators agree on a higher fee, the same fees have to apply to the entire Tribunal (with the 20% increase for the President of the Tribunal).",
+      "U slučajevima kada sud odluči održati saslušanja uživo, arbitri imaju pravo tražiti naknadu svojih razumnih putnih troškova nakon predočenja potvrda.": "In cases where the tribunal decides to hold hearings in person, Arbitrators are justified in requesting reimbursement of their reasonable travel costs upon presenting the receipts.",
+      "Nacionalne poreze, ako postoje, vezane uz iznose plaćene za sudjelovanje u arbitraži snosit će arbitri.": "The national taxes, if any, related to the amounts paid for participating in the arbitration will be borne by the arbitrators.",
+      "Iznos spora": "Amount in Dispute",
+      "Naknade vještaka": "Arbitrator's Fee",
+      "Naknade stručnjaka": "Experts' Fees",
+      "U slučajevima kada Arbitražni sud imenuje vještaka u skladu s Arbitražnim pravilima, imenovani vještak će imati pravo na naknadu na temelju vremena utrošenog na rad na predmetu po satnici od:": "In cases where the Arbitral Tribunal appoints an Expert in accordance with the Arbitration Rules, the appointed Expert will be entitled to compensation based on time used on working on the case at the hourly rate of:",
+      "Nakon imenovanja vještaka od strane Sudišta, Sudište će od stranaka zatražiti plaćanje naknade vještaku unaprijed za određeni broj sati koje Sudište smatra odgovarajućim za zadatak. Sudište će zatražiti isplatu dodatnih naknada ako vještakovo korištenje vremena razumno premašuje akontaciju.": "Upon appointment of an expert by the Tribunal, the Tribunal will request advance payment of the Expert’s fees from the Parties for a number of hours the Tribunal finds appropriate for the task. The Tribunal will request payment of additional fees if the Expert’s time use reasonably exceeds the advance payment.",
+      "Gore navedene naknade primjenjuju se u slučajevima kada se stranke i Vještak ne dogovore o višoj naknadi.": "The above fees apply in case where the parties and the Expert do not agree on a higher fee.",
+      "U slučajevima kada Sudište odluči održati saslušanja uživo, vještaci imaju pravo zatražiti naknadu svojih razumnih putnih troškova nakon predočenja potvrda.": "In cases where the Tribunal decides to hold hearings in person, Experts are justified in requesting reimbursement of their reasonable travel costs upon presenting the receipts.",
+      "Nacionalne poreze, ako ih ima, povezane s iznosima plaćenim za sudjelovanje u arbitraži snosit će vještaci.": "The national taxes, if any, related to the amounts paid for participating in the arbitration will be borne by the Experts."
+}
