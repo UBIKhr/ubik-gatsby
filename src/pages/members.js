@@ -38,7 +38,7 @@ export const query = graphql`
         gatsbyImageData
       }
     }
-    image4: file(relativePath: { eq: "ivan.png" }) {
+    image4: file(relativePath: { eq: "edi.png" }) {
       childImageSharp {
         gatsbyImageData
       }
@@ -48,7 +48,7 @@ export const query = graphql`
         gatsbyImageData
       }
     }
-    image6: file(relativePath: { eq: "boris.png" }) {
+    image6: file(relativePath: { eq: "zoran.png" }) {
       childImageSharp {
         gatsbyImageData
       }
@@ -163,17 +163,17 @@ const MembersPage = ({data}) => {
     },
     {
         image: data.image4.childImageSharp.gatsbyImageData,
-        titleperson: 'Ivan Glavaš',
+        titleperson: 'Edi Sinovčić',
         textperson: t("upravniOdbor.3.textperson"),
         socialLinks: [
           {
             name: "Email",
-            link: "mailto:ivan@ubik.hr",
+            link: "mailto:edi@ubik.hr",
             icon: data.mailIcon.childImageSharp.gatsbyImageData,
           },
           {
             name: "LinkedIn",
-            link: "https://www.linkedin.com/in/ivanglavas/",
+            link: "https://www.linkedin.com/in/edi-sinovcic/",
             icon: data.linkedinIcon.childImageSharp.gatsbyImageData,
           },
         ],
@@ -197,17 +197,17 @@ const MembersPage = ({data}) => {
       },
       {
         image: data.image6.childImageSharp.gatsbyImageData,
-        titleperson: 'Boris Agatić',
+        titleperson: 'Zoran Balkić',
         textperson: t("upravniOdbor.5.textperson"),
         socialLinks: [
           {
             name: "Email",
-            link: "mailto:boris@ubik.hr",
+            link: "mailto:zoran@ubik.hr",
             icon: data.mailIcon.childImageSharp.gatsbyImageData,
           },
           {
             name: "LinkedIn",
-            link: "https://www.linkedin.com/in/borisagatic/",
+            link: "https://www.linkedin.com/in/zbalkic/",
             icon: data.linkedinIcon.childImageSharp.gatsbyImageData,
           },
         ],

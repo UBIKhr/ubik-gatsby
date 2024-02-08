@@ -111,7 +111,6 @@ const Footer = () => {
             <li className='text-opacity-40 pb-4'>Udruga za blockchain i kriptovalute - UBIK</li>
             <li className='text-opacity-40 pb-4'>Slavonska avenija 6, 10000 Zagreb, Hrvatska</li>
             <li className='text-opacity-40 pb-4'>Email: <a href='mailto:info@ubik.hr'>info@ubik.hr</a></li>
-            <li className='text-opacity-40 pb-4'><Trans i18nKey={"phone"}>Kontakt telefon:</Trans> <a href='tel:+38514106456'>01/4106-456</a></li>
             <li className='text-opacity-40 pb-4'>OIB: 49493768738</li>
             <li className='text-opacity-40 pb-4'><Trans i18nKey={"regbr"}>Registarski broj</Trans>: 21012855</li>
             <li className='text-opacity-40 pb-4'><Trans i18nKey={"racun"}>Transakcijski račun</Trans>: HR0324020061100858697</li>
