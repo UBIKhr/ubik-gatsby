@@ -50,25 +50,21 @@ const Footer = () => {
 
 
   const links = [
+    
     {
-      text: <Trans i18nKey={"homepage"}>Naslovnica</Trans>,
-      url: '/',
+      element: <Link to="/"><Trans i18nKey={"homepage"}>Naslovnica</Trans></Link>
     },
     {
-      text: <Trans i18nKey={"blog"}>contact</Trans>,
-      url: '/blog',
+      element: <a href="https://blog.ubik.hr"><Trans i18nKey={"blog"}>Blog</Trans></a>
     },
     {
-      text: <Trans i18nKey={"arbitration"}>contact</Trans>,
-      url: '/arbitraza',
+      element: <Link to="/arbitraza"><Trans i18nKey={"arbitration"}>arbitraza</Trans></Link>
     },
     {
-      text: <Trans i18nKey={"members"}></Trans>,
-      url: '/members',
+      element: <Link to="/members"><Trans i18nKey={"members"}>members</Trans></Link>
     },
     {
-      text: <Trans i18nKey={"contact"}>Kontakt</Trans>,
-      url: '/contact',
+      element: <Link to="/contact"><Trans i18nKey={"contact"}>contact</Trans></Link>
     },
   ];
 
@@ -124,9 +120,7 @@ const Footer = () => {
               before:hover:scale-x-100 before:scale-x-0 before:origin-top-left
               before:transition before:ease-in-out before:duration-300`}
             >
-              <Link to={link.url}>
-                {link.text}
-              </Link>
+              {link.element}
             </li>
           ))}
         </ul>

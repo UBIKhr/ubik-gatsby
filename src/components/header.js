@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import { Link, useI18next } from 'gatsby-plugin-react-i18next';
 import { Trans, useTranslation } from 'gatsby-plugin-react-i18next';
 import logo from '../images/logo.png';
@@ -27,26 +27,32 @@ const Header = () => {
       }  
     }
   `);
+
+  const handleLinkClick = useMemo(() => {
+    if (isExpanded) {
+      toggleExpansion(false);
+      if (window.innerWidth <= 1024) {
+        setScrolled(true);
+      }
+    }
+  }, [isExpanded, toggleExpansion, setScrolled]);
+
+  const createLink = (url, text) => <Link to={url} onClick={handleLinkClick}><Trans>{text}</Trans></Link>;
   const links = [
     {
-      text: <Trans i18nKey={"homepage"}>Naslovnica</Trans>,
-      url: '/',
+      element: createLink('/', <Trans i18nKey={"homepage"}>Naslovnica</Trans>)
     },
     {
-      text: <Trans i18nKey={"blog"}>contact</Trans>,
-      url: 'blog.ubik.hr',
+      element: <a href="https://blog.ubik.hr"><Trans i18nKey={"blog"}>blog</Trans></a>,
     },
     {
-      text: <Trans i18nKey={"arbitration"}>contact</Trans>,
-      url: '/arbitraza',
+      element: createLink('/arbitraza', <Trans i18nKey={"arbitration"}>arbitration</Trans>)
     },
     {
-      text: <Trans i18nKey={"members"}></Trans>,
-      url: '/members',
+      element: createLink('/members', <Trans i18nKey={"members"}></Trans>)
     },
     {
-      text: <Trans i18nKey={"contact"}>Kontakt</Trans>,
-      url: '/contact',
+      element: createLink('/contact', <Trans i18nKey={"contact"}>Kontakt</Trans>)
     },
   ];
 
@@ -73,15 +79,6 @@ const Header = () => {
     setCurrentPath(originalPath);
   }, [originalPath]);
 
-  const handleLinkClick = () => {
-    if (isExpanded) {
-      toggleExpansion(false);
-      if (window.innerWidth <= 1024) {
-        setScrolled(true);
-      }
-    }
-  };
-
   const handleButtonClick = () => {
     toggleExpansion(!isExpanded);
   };
@@ -102,9 +99,7 @@ const Header = () => {
               before:hover:scale-x-100 before:scale-x-0 before:origin-top-left
               before:transition before:ease-in-out before:duration-300`}
             >
-              <Link to={link.url} onClick={handleLinkClick}>
-                <Trans>{link.text} </Trans>
-              </Link>
+              {link.element}
             </li>
           ))}
         </ul>
