@@ -34,7 +34,7 @@ const Header = () => {
     },
     {
       text: <Trans i18nKey={"blog"}>contact</Trans>,
-      url: '/blog',
+      url: 'blog.ubik.hr',
     },
     {
       text: <Trans i18nKey={"arbitration"}>contact</Trans>,
