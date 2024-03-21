@@ -10,7 +10,6 @@ import Button from "../components/button.js";
 import { Link, useTranslation, Trans } from 'gatsby-plugin-react-i18next';
 import ArbitrationLinks from "../components/arbitrationlinks.js";
 import FeesLinks from "../components/feeslinks.js";
-import { LANGUAGE_KEY } from "gatsby-plugin-react-i18next/dist/types.js";
 
 
 export const query = graphql`
