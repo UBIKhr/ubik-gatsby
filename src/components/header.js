@@ -34,7 +34,8 @@ const Header = () => {
     },
     {
       text: <Trans i18nKey={"blog"}>contact</Trans>,
-      url: '/blog',
+      url: 'https://blog.ubik.hr/',
+      external: true,
     },
     {
       text: <Trans i18nKey={"arbitration"}>contact</Trans>,
@@ -102,9 +103,15 @@ const Header = () => {
               before:hover:scale-x-100 before:scale-x-0 before:origin-top-left
               before:transition before:ease-in-out before:duration-300`}
             >
-              <Link to={link.url} onClick={handleLinkClick}>
-                <Trans>{link.text} </Trans>
-              </Link>
+              {link.external ? (
+                <a href={link.url} target="_blank" rel="noopener noreferrer" onClick={handleLinkClick}>
+                  <Trans>{link.text} </Trans>
+                </a>
+              ) : (
+                <Link to={link.url} onClick={handleLinkClick}>
+                  <Trans>{link.text} </Trans>
+                </Link>
+              )}
             </li>
           ))}
         </ul>
@@ -133,9 +140,15 @@ const Header = () => {
               before:hover:scale-x-100 before:scale-x-0 before:origin-top-left
               before:transition before:ease-in-out before:duration-300`} 
             >
-              <Link to={link.url} onClick={handleLinkClick}>
-              <Trans>{link.text} </Trans>
-              </Link>
+              {link.external ? (
+                <a href={link.url} target="_blank" rel="noopener noreferrer" onClick={handleLinkClick}>
+                  <Trans>{link.text} </Trans>
+                </a>
+              ) : (
+                <Link to={link.url} onClick={handleLinkClick}>
+                  <Trans>{link.text} </Trans>
+                </Link>
+              )}
             </li>
           ))}
           <ul className="inline uppercase pt-10">
