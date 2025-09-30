@@ -7,7 +7,7 @@
     "upravniOdbor": [
         {
         "subtitle": "President",
-        "textperson": "Vlaho Hrdalo is a lawyer who focuses on fintech, blockchain, and cryptocurrencies in his professional and scientific work."
+        "textperson": "Regulatory compliance expert with a background in financial supervision, now fully engaged in driving progress in the crypto sector."
         },
         {
         "textperson": "Nikola Škorić is the founder and CEO of Electrocoin Ltd., which operates the leading Croatian cryptocurrency exchange and payment system Paycek."
@@ -16,16 +16,13 @@
         "textperson": "Entrepreneur who loves new and unexplored things. Actively working on product and ecosystem development and as a partner in the MCC blockchain startup fund."
         },
         {
-        "textperson": "Founder of blockchain development studio Shard Labs specializing in the development of distributed scalable systems, until recently a collaborator at the Ethereum Foundation."
+        "textperson": "Vlaho Hrdalo is a lawyer who focuses on fintech, blockchain, and cryptocurrencies in his professional and scientific work."
         },
         {
-        "textperson": "Bruno Škvorc is the founder of RMRK, an NFT protocol on the Kusama blockchain network."
+        "textperson": "Antonio is a cofounder and CEO at Locastic, a product development company from Croatia working with clients worldwide. He also cofounded and started the BlockSplit conference, one of the most prominent blockchain events in our region."
         },
         {
-        "textperson": "Professor at FERIT in Osijek, an expert in Bitcoin and mining, and founder of Base58."
-        },
-        {
-        "textperson": "Belma Gutlić is the co-founder of the acquired company NodeFactory and head of the Solutions department at ChainSafe."
+        "textperson": "Bringing 10 years of crypto research to life through on-chain analysis and data-driven tools. I build on-chain inflation indexes, DeFi insights, and market dashboards that help investors and teams act fast."
         }
         ]
 }

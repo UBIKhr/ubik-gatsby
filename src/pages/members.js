@@ -23,7 +23,7 @@ export const query = graphql`
         gatsbyImageData
       }
     }
-    image1: file(relativePath: { eq: "vlaho.png" }) {
+    image1: file(relativePath: { eq: "Filip.png" }) {
       childImageSharp {
         gatsbyImageData
       }
@@ -38,22 +38,17 @@ export const query = graphql`
         gatsbyImageData
       }
     }
-    image4: file(relativePath: { eq: "edi.png" }) {
+    image4: file(relativePath: { eq: "vlaho.png" }) {
       childImageSharp {
         gatsbyImageData
       }
     }
-    image5: file(relativePath: { eq: "bruno.png" }) {
+    image6: file(relativePath: { eq: "antonio.jpg" }) {
       childImageSharp {
         gatsbyImageData
       }
     }
-    image6: file(relativePath: { eq: "zoran.png" }) {
-      childImageSharp {
-        gatsbyImageData
-      }
-    }
-    image7: file(relativePath: { eq: "belma.png" }) {
+    image7: file(relativePath: { eq: "jelic.jpg" }) {
       childImageSharp {
         gatsbyImageData
       }
@@ -112,17 +107,17 @@ const MembersPage = ({data}) => {
     {
       image: data.image1.childImageSharp.gatsbyImageData,
       subtitle: t("upravniOdbor.0.subtitle"),
-      titleperson: 'Vlaho Hrdalo',
+      titleperson: 'Filip Šaravanja',
       textperson: t("upravniOdbor.0.textperson"),
       socialLinks: [
         {
           name: "E-mail",
-          link: "mailto: vlaho@hkod.hr",
+          link: "mailto: filip@ubik.hr",
           icon: data.mailIcon.childImageSharp.gatsbyImageData,
         },
         {
           name: "LinkedIn",
-          link: "https://hr.linkedin.com/in/vlaho-hrdalo",
+          link: "https://www.linkedin.com/in/filip-%C5%A1aravanja-974581159/",
           icon: data.linkedinIcon.childImageSharp.gatsbyImageData,
         },
       ],
@@ -163,68 +158,51 @@ const MembersPage = ({data}) => {
     },
     {
         image: data.image4.childImageSharp.gatsbyImageData,
-        titleperson: 'Edi Sinovčić',
+        titleperson: 'Vlaho Hrdalo',
         textperson: t("upravniOdbor.3.textperson"),
         socialLinks: [
           {
             name: "Email",
-            link: "mailto:edi@ubik.hr",
+            link: "mailto:vlaho@hkod.hr",
             icon: data.mailIcon.childImageSharp.gatsbyImageData,
           },
           {
             name: "LinkedIn",
-            link: "https://www.linkedin.com/in/edi-sinovcic/",
-            icon: data.linkedinIcon.childImageSharp.gatsbyImageData,
-          },
-        ],
-      },
-      {
-        image: data.image5.childImageSharp.gatsbyImageData,
-        titleperson: 'Bruno Škvorc',
-        textperson: t("upravniOdbor.4.textperson"),
-        socialLinks: [
-          {
-            name: "Email",
-            link: "mailto:bruno@ubik.hr",
-            icon: data.mailIcon.childImageSharp.gatsbyImageData,
-          },
-          {
-            name: "LinkedIn",
-            link: "https://www.linkedin.com/in/swader/",
+            link: "https://hr.linkedin.com/in/vlaho-hrdalo",
             icon: data.linkedinIcon.childImageSharp.gatsbyImageData,
           },
         ],
       },
       {
         image: data.image6.childImageSharp.gatsbyImageData,
-        titleperson: 'Zoran Balkić',
-        textperson: t("upravniOdbor.5.textperson"),
+        titleperson: 'Antonio Perić Mažar',
+        textperson: t("upravniOdbor.4.textperson"),
         socialLinks: [
           {
             name: "Email",
-            link: "mailto:zoran@ubik.hr",
+            link: "mailto:antonio@ubik.hr",
             icon: data.mailIcon.childImageSharp.gatsbyImageData,
           },
           {
             name: "LinkedIn",
-            link: "https://www.linkedin.com/in/zbalkic/",
+            link: "https://www.linkedin.com/in/antonioperic/",
             icon: data.linkedinIcon.childImageSharp.gatsbyImageData,
           },
         ],
       },
       {
         image: data.image7.childImageSharp.gatsbyImageData,
-        titleperson: 'Belma Gutlić',
-        textperson: t("upravniOdbor.6.textperson"),
+        titleperson: 'Ivan Jelić',
+        textperson: t("upravniOdbor.5.textperson"),
         socialLinks: [
           {
             name: "Email",
-            link: "mailto:belma@ubik.hr",
+            link: "mailto:ivan@ubik.hr",
             icon: data.mailIcon.childImageSharp.gatsbyImageData,
           },
           {
             name: "LinkedIn",
-            link: "https://www.linkedin.com/in/belmagutlic/",
+            link: "https://www.linkedin.com/in/ivan-jelic/",
             icon: data.linkedinIcon.childImageSharp.gatsbyImageData,
           },
         ],
