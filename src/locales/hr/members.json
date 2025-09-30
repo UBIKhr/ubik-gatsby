@@ -7,7 +7,7 @@
     "upravniOdbor": [
         {
             "subtitle": "Predsjednik",
-            "textperson": "Vlaho Hrdalo je odvjetnik koji se u svom profesionalnom i znanstvenom radu fokusira na fintech, blockchain i kriptovalute."
+            "textperson": "Stručnjak za regulatornu usklađenost s iskustvom u financijskom nadzoru, sada potpuno posvećen pokretanju napretka u kripto sektoru."
         },
         {
             "textperson": "Nikola Škorić je osnivač i direktor Electrocoin d.o.o., u sastavu kojeg posluje vodeća hrvatska mjenjačnica kriptovaluta i platni sustav Paycek."
@@ -16,16 +16,13 @@
             "textperson": "Poduzetnik koji voli nove i neistražene stvari. Aktivno radi na razvoju proizvoda i ekosustava te kao partner u fondu za blockchain startupe MCC."
         },
         {
-            "textperson": "Osnivač blockchain development studija Shard Labs specijaliziranog za razvoj distribuiranih skalabilnih sustava, donedavno i suradnik u Ethereum Foundationu."
+            "textperson": "Vlaho Hrdalo je odvjetnik koji se u svom profesionalnom i znanstvenom radu fokusira na fintech, blockchain i kriptovalute."
         },
         {
-            "textperson": "Bruno Škvorc je osnivač RMRK, NFT protokola na Kusama blockchain mreži."
+            "textperson": "Antonio je suosnivač i izvršni direktor (CEO) tvrtke Locastic, kompanije za razvoj proizvoda iz Hrvatske koja surađuje s klijentima širom svijeta. Također je suosnivač i pokretač konferencije BlockSplit, jednog od najznačajnijih događaja posvećenih blockchain tehnologiji na našem području."
         },
         {
-            "textperson": "Profesor na FERIT-u u Osijeku, stručnjak za Bitcoin i rudarenje te osnivač tvrtke Base58."
-        },
-        {
-            "textperson": "Belma Gutlić je suosnivačica akvizirane tvrtke NodeFactory, voditeljica Solutions odjela u ChainSafeu."
+            "textperson": "Deset godina istraživanja kriptovaluta pretvara u praktična rješenja kroz on-chain analizu. Gradi on-chain indekse inflacije, uvide u DeFi i nadzorne ploče za tržište koji pomažu investitorima i timovima da brzo donose odluke."
         }
     ] 
 }
