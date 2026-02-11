@@ -42,7 +42,7 @@ export const query = graphql`
       childImageSharp {
         gatsbyImageData
       }
-    }
+    } 
     image6: file(relativePath: { eq: "antonio.jpg" }) {
       childImageSharp {
         gatsbyImageData
@@ -79,6 +79,11 @@ export const query = graphql`
       }
     }
     image13: file(relativePath: { eq: "chainsafe.png" }) {
+      childImageSharp {
+        gatsbyImageData
+      }
+    }
+      image14: file(relativePath: { eq: "bruno.png" }) {
       childImageSharp {
         gatsbyImageData
       }
@@ -203,6 +208,23 @@ const MembersPage = ({data}) => {
           {
             name: "LinkedIn",
             link: "https://www.linkedin.com/in/ivan-jelic/",
+            icon: data.linkedinIcon.childImageSharp.gatsbyImageData,
+          },
+        ],
+      },
+      {
+        image: data.image14.childImageSharp.gatsbyImageData,
+        titleperson: 'Bruno Škvorc',
+        textperson: t("upravniOdbor.6.textperson"),
+        socialLinks: [
+          {
+            name: "Email",
+            link: "mailto:bruno@ubik.hr",
+            icon: data.mailIcon.childImageSharp.gatsbyImageData,
+          },
+          {
+            name: "LinkedIn",
+            link: "https://hr.linkedin.com/in/swader",
             icon: data.linkedinIcon.childImageSharp.gatsbyImageData,
           },
         ],

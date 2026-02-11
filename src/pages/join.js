@@ -32,7 +32,7 @@ const JoinUsPage = ({ data }) => {
 
     const pricesData = [
         {
-            price: "20 EUR",
+            price: "5 EUR",
             type: t("STUDENT MEMBERSHIP"),
             peryear: t("peryear"),
             list: [
@@ -50,7 +50,7 @@ const JoinUsPage = ({ data }) => {
             changeColor: 'orange1',
         },
         {
-            price: "65 EUR",
+            price: "120 EUR",
             type: t("REGULAR MEMBERSHIP"),
             peryear: t("peryear"),
             list: [
@@ -68,7 +68,7 @@ const JoinUsPage = ({ data }) => {
             changeColor: 'pink2',
         },
         {
-            price: "EUR 175",
+            price: "600 EUR",
             type: t("CORPORATE MEMBERSHIP"),
             peryear: t("peryear"),
             list: [
@@ -83,7 +83,7 @@ const JoinUsPage = ({ data }) => {
             changeColor: 'pink1',
         },
         {
-            price: "EUR 330",
+            price: "1200 EUR",
             type: t("CORE MEMBERSHIP"),
             peryear: t("peryear"),
             list: [
