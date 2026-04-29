@@ -63,11 +63,6 @@ export const query = graphql`
         gatsbyImageData
       }
     }
-    image10: file(relativePath: { eq: "shardlabs.png" }) {
-      childImageSharp {
-        gatsbyImageData
-      }
-    }
     image11: file(relativePath: { eq: "drugakozmicka.jpeg" }) {
       childImageSharp {
         gatsbyImageData
@@ -241,11 +236,6 @@ const MembersPage = ({data}) => {
         name: 'Electrocoin',
         logoUrl: data.image9.childImageSharp.gatsbyImageData,
         website: 'hhttps://electrocoin.eu/',
-    },
-    {
-        name: 'Shardlabs',
-        logoUrl: data.image10.childImageSharp.gatsbyImageData,
-        website: 'https://shardlabs.io/',
     },
     {
         name: 'Druga kozmicka',
